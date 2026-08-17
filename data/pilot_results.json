@@ -1,0 +1,1294 @@
+{
+  "Salesforce": {
+    "app_name": "Salesforce",
+    "category": "Unknown",
+    "website": "developer.salesforce.com",
+    "api": {
+      "api_available": "unknown",
+      "api_types": [],
+      "api_breadth": "unknown",
+      "official_api_docs_url": null
+    },
+    "authentication": {
+      "auth_methods": [],
+      "developer_access": "unknown",
+      "auth_docs_url": null
+    },
+    "webhooks": {
+      "available": "unknown",
+      "docs_url": null
+    },
+    "mcp": {
+      "status": "unknown",
+      "source_url": null
+    },
+    "documentation": {
+      "quality": "unknown",
+      "official_docs": []
+    },
+    "composio": {
+      "currently_supported": "no",
+      "toolkit_slug": null,
+      "toolkit_source_url": null
+    },
+    "recommendation": {
+      "buildability": "UNKNOWN",
+      "priority": "NEEDS_REVIEW",
+      "score": 10,
+      "confidence": 100,
+      "recommendation_reason": "Score: 10. Buildability: UNKNOWN."
+    },
+    "verification": {
+      "verified": false,
+      "unsupported_claims": [],
+      "issues": [
+        "Verification LLM call failed"
+      ],
+      "verifier_notes": "Could not run verification \u2013 LLM unavailable."
+    },
+    "evidence": [
+      {
+        "field": "general",
+        "claim": "Source found for Salesforce",
+        "source_url": "https://developer.salesforce.com/docs/platform/graphql/overview",
+        "source_title": "GraphQL API",
+        "source_type": "official_docs",
+        "evidence_excerpt": "GraphQL API",
+        "checked_at": "2026-08-17T16:43:59.928983+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Salesforce",
+        "source_url": "https://developer.salesforce.com/docs/platform/graphql/guide/requests-and-responses.html",
+        "source_title": "Requests and Responses | Schema Structure | GraphQL API",
+        "source_type": "official_docs",
+        "evidence_excerpt": "# GraphQL Request and Response Structure\n## Request\n```\n1{\n2  \"query\": \"query accounts {\n3      uiapi {\n4          query {\n5              Account {\n6                  edges {\n7                      no",
+        "checked_at": "2026-08-17T16:43:59.928983+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Salesforce",
+        "source_url": "https://developer.salesforce.com/docs/apis",
+        "source_title": "API Library | Salesforce Developers",
+        "source_type": "official_docs",
+        "evidence_excerpt": "# Salesforce APIs\n## Browse all APIs.\n[API**GraphQL API**Aggregate records, request explicit fields, introspect the schema, and more with the GraphQL API for Salesforce. GraphQL is an open-source data",
+        "checked_at": "2026-08-17T16:43:59.928983+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Salesforce",
+        "source_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm",
+        "source_title": "Authorization Through External Client Apps or Connected ...",
+        "source_type": "official_docs",
+        "evidence_excerpt": "OAuth authorization flows grant a client app restricted access to REST API resources on a resource server. Each OAuth flow offers a different process for ...",
+        "checked_at": "2026-08-17T16:43:59.928983+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Salesforce",
+        "source_url": "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/intro_using_oauth.html",
+        "source_title": "OAuth and Connect REST API",
+        "source_type": "official_docs",
+        "evidence_excerpt": "Connect REST API uses OAuth to securely identify your application before connecting to Salesforce. To use Connect REST API, create a REST entry point.",
+        "checked_at": "2026-08-17T16:43:59.928983+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Salesforce",
+        "source_url": "https://trailhead.salesforce.com/trailblazer-community/feed/0D54V00007T48bRSAR",
+        "source_title": "how to get api key and security key - Trailhead - Salesforce",
+        "source_type": "search_result",
+        "evidence_excerpt": "how to get api key and security key",
+        "checked_at": "2026-08-17T16:43:59.928983+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Salesforce",
+        "source_url": "https://admin.salesforce.com/blog/2025/what-is-mcp-a-simple-guide-to-model-context-protocol-for-salesforce-admins",
+        "source_title": "What Is MCP? A Simple Guide to Model Context Protocol ...",
+        "source_type": "search_result",
+        "evidence_excerpt": "# What Is MCP? A Simple Guide to Model Context Protocol for Salesforce Admins\n## Context is king\n- **Server:** Exposes data, prompts, and actions",
+        "checked_at": "2026-08-17T16:43:59.928983+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Salesforce",
+        "source_url": "https://www.salesforce.com/agentforce/mcp-support/model-context-protocol/",
+        "source_title": "Model Context Protocol: What Is MCP for Generative AI?",
+        "source_type": "search_result",
+        "evidence_excerpt": "The Model Context Protocol (MCP) is a standardized communication protocol designed to link AI models to the specific context they need to function effectively.",
+        "checked_at": "2026-08-17T16:43:59.928983+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Salesforce",
+        "source_url": "https://github.com/smn2gnt/MCP-Salesforce",
+        "source_title": "MCP Salesforce connector",
+        "source_type": "official_github",
+        "evidence_excerpt": "# MCP Salesforce Connector\nA Model Context Protocol (MCP) server implementation for Salesforce integration, allowing LLMs to interact with Salesforce data through SOQL queries and SOSL searches.\n\n## C",
+        "checked_at": "2026-08-17T16:43:59.928983+00:00"
+      }
+    ]
+  },
+  "Zendesk": {
+    "app_name": "Zendesk",
+    "category": "Unknown",
+    "website": "developer.zendesk.com",
+    "api": {
+      "api_available": "unknown",
+      "api_types": [],
+      "api_breadth": "unknown",
+      "official_api_docs_url": null
+    },
+    "authentication": {
+      "auth_methods": [],
+      "developer_access": "unknown",
+      "auth_docs_url": null
+    },
+    "webhooks": {
+      "available": "unknown",
+      "docs_url": null
+    },
+    "mcp": {
+      "status": "unknown",
+      "source_url": null
+    },
+    "documentation": {
+      "quality": "unknown",
+      "official_docs": []
+    },
+    "composio": {
+      "currently_supported": "no",
+      "toolkit_slug": null,
+      "toolkit_source_url": null
+    },
+    "recommendation": {
+      "buildability": "UNKNOWN",
+      "priority": "NEEDS_REVIEW",
+      "score": 10,
+      "confidence": 100,
+      "recommendation_reason": "Score: 10. Buildability: UNKNOWN."
+    },
+    "verification": {
+      "verified": false,
+      "unsupported_claims": [],
+      "issues": [
+        "Verification LLM call failed"
+      ],
+      "verifier_notes": "Could not run verification \u2013 LLM unavailable."
+    },
+    "evidence": [
+      {
+        "field": "general",
+        "claim": "Source found for Zendesk",
+        "source_url": "https://developer.zendesk.com/api-reference/sales-crm/search/graphql/",
+        "source_title": "GraphQL - Zendesk Developer Docs",
+        "source_type": "official_docs",
+        "evidence_excerpt": "# [graphql permalink](https://developer.zendesk.com/api-reference/sales-crm/search/graphql/#graphql) GraphQL\n```\n{ companies(ids: [1]) {   ancestors {     edges {       node {         id         paren",
+        "checked_at": "2026-08-17T16:44:11.665243+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Zendesk",
+        "source_url": "https://developer.zendesk.com/api-reference/",
+        "source_title": "API Reference Home | Zendesk Developer Docs",
+        "source_type": "official_docs",
+        "evidence_excerpt": "Welcome to the Zendesk API reference docs. You'll find APIs for ticketing, help center, live chat, voice, sales CRM as well as some features that span ...",
+        "checked_at": "2026-08-17T16:44:11.665243+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Zendesk",
+        "source_url": "https://developer.zendesk.com/api-reference/ticketing/tickets/tickets/",
+        "source_title": "Tickets - Zendesk Developer Docs",
+        "source_type": "official_docs",
+        "evidence_excerpt": "# Tickets\n### [list tickets permalink](https://developer.zendesk.com/api-reference/ticketing/tickets/tickets/#list-tickets) List Tickets\n#### [code samples 2 permalink](https://developer.zendesk.com/a",
+        "checked_at": "2026-08-17T16:44:11.665243+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Zendesk",
+        "source_url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+        "source_title": "Security and authentication | Zendesk Developer Docs",
+        "source_type": "official_docs",
+        "evidence_excerpt": "# Security and authentication\n### [oauth access token permalink](https://developer.zendesk.com/api-reference/introduction/security-and-auth/#oauth-access-token) OAuth access token\n```\nAuthorization: B",
+        "checked_at": "2026-08-17T16:44:11.665243+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Zendesk",
+        "source_url": "https://support.zendesk.com/hc/en-us/articles/4408889192858-Managing-API-token-access-to-the-Zendesk-API",
+        "source_title": "Managing API token access to the Zendesk API",
+        "source_type": "search_result",
+        "evidence_excerpt": "In Admin Center, click Apps and integrations in the sidebar, then select APIs > API tokens. \u00b7 Click Add API token. \u00b7 (Optional) Enter a ...",
+        "checked_at": "2026-08-17T16:44:11.665243+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Zendesk",
+        "source_url": "https://developer.zendesk.com/documentation/authentication/creating-and-using-oauth-tokens-with-the-api/",
+        "source_title": "Creating and using OAuth access tokens with the API",
+        "source_type": "official_docs",
+        "evidence_excerpt": "# Creating and using OAuth access tokens with the API\nDevelopers typically use OAuth access tokens to authenticate Zendesk API requests on behalf of their users.\n\n## [creating an oauth client permalin",
+        "checked_at": "2026-08-17T16:44:11.665243+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Zendesk",
+        "source_url": "https://support.zendesk.com/hc/en-us/articles/10497779528730-Connecting-to-MCP-servers-and-using-MCP-tools-in-action-flows",
+        "source_title": "Connecting to MCP servers and using MCP tools in action ...",
+        "source_type": "search_result",
+        "evidence_excerpt": "# Connecting to MCP servers and using MCP tools in action flows\nThe Model Context Protocol (MCP) lets admins connect Zendesk to external MCP servers, discover the tools those servers provide, and use ",
+        "checked_at": "2026-08-17T16:44:11.665243+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Zendesk",
+        "source_url": "https://github.com/reminia/zendesk-mcp-server",
+        "source_title": "reminia/zendesk-mcp-server: A Model Context Protocol ...",
+        "source_type": "official_github",
+        "evidence_excerpt": "# Zendesk MCP Server\nA Model Context Protocol server for Zendesk.\n\n## Setup\n### Docker\n```\ndocker build -t zendesk-mcp-server .\n```\n\n## About\nA Model Context Protocol server for Zendesk",
+        "checked_at": "2026-08-17T16:44:11.665243+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Zendesk",
+        "source_url": "https://www.zendesk.com/blog/zendesk-insights/innovation/zendesk-ai-mcp-client/",
+        "source_title": "Revolutionizing service with the Zendesk AI MCP client",
+        "source_type": "search_result",
+        "evidence_excerpt": "The Model Context Protocol (MCP), introduced by Anthropic , changes this. It's a standard, open framework that gives AI assistants a simple, ...",
+        "checked_at": "2026-08-17T16:44:11.665243+00:00"
+      }
+    ]
+  },
+  "Slack": {
+    "app_name": "Slack",
+    "category": "Unknown",
+    "website": "docs.slack.dev",
+    "api": {
+      "api_available": "unknown",
+      "api_types": [],
+      "api_breadth": "unknown",
+      "official_api_docs_url": null
+    },
+    "authentication": {
+      "auth_methods": [],
+      "developer_access": "unknown",
+      "auth_docs_url": null
+    },
+    "webhooks": {
+      "available": "unknown",
+      "docs_url": null
+    },
+    "mcp": {
+      "status": "unknown",
+      "source_url": null
+    },
+    "documentation": {
+      "quality": "unknown",
+      "official_docs": []
+    },
+    "composio": {
+      "currently_supported": "yes",
+      "toolkit_slug": "slack",
+      "toolkit_source_url": "https://composio.dev/toolkits/slack"
+    },
+    "recommendation": {
+      "buildability": "UNKNOWN",
+      "priority": "COVERED",
+      "score": 10,
+      "confidence": 100,
+      "recommendation_reason": "Score: 10. Buildability: UNKNOWN."
+    },
+    "verification": {
+      "verified": false,
+      "unsupported_claims": [],
+      "issues": [
+        "Verification LLM call failed"
+      ],
+      "verifier_notes": "Could not run verification \u2013 LLM unavailable."
+    },
+    "evidence": [
+      {
+        "field": "general",
+        "claim": "Source found for Slack",
+        "source_url": "https://docs.slack.dev/apis/web-api/",
+        "source_title": "Slack Web API",
+        "source_type": "official_docs",
+        "evidence_excerpt": "## Basic overview [\u200b](https://docs.slack.dev/apis/web-api/#basics)\n### POST bodies [\u200b](https://docs.slack.dev/apis/web-api/#post-bodies)\n#### JSON-encoded bodies [\u200b](https://docs.slack.dev/apis/web-ap",
+        "checked_at": "2026-08-17T16:44:34.722385+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Slack",
+        "source_url": "https://api.slack.com/authentication/basics",
+        "source_title": "Slack API Quickstart",
+        "source_type": "official_docs",
+        "evidence_excerpt": "## Running the app [\u200b](https://docs.slack.dev/quickstart/#running-the-app)\n```sh\n$ export SLACK_APP_TOKEN=<your-app-level-token>\n```\n\n```sh\n$ export SLACK_BOT_TOKEN=xoxb-<your-bot-token>\n```\n\n## Next ",
+        "checked_at": "2026-08-17T16:44:34.722385+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Slack",
+        "source_url": "https://docs.slack.dev/apis/",
+        "source_title": "Slack APIs",
+        "source_type": "official_docs",
+        "evidence_excerpt": "Slack APIs. Every Slack app and workflow has access to a range of APIs that provide access to read, write, and update many types of data in Slack.",
+        "checked_at": "2026-08-17T16:44:34.722385+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Slack",
+        "source_url": "https://docs.slack.dev/authentication/installing-with-oauth",
+        "source_title": "Installing with OAuth",
+        "source_type": "official_docs",
+        "evidence_excerpt": "## Obtaining access tokens with OAuth [\u200b](https://docs.slack.dev/authentication/installing-with-oauth/#obtaining)\n### Exchanging a temporary authorization code for an access token [\u200b](https://docs.sla",
+        "checked_at": "2026-08-17T16:44:34.722385+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Slack",
+        "source_url": "https://api.slack.com/apps/",
+        "source_title": "Slack API: Applications",
+        "source_type": "official_docs",
+        "evidence_excerpt": "You'll need to sign in to your Slack account to create an application. Don't see an app you're looking for? Sign in to another workspace.",
+        "checked_at": "2026-08-17T16:44:34.722385+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Slack",
+        "source_url": "https://community.n8n.io/t/slack-oauth2-api-credentials-for-slack-app/45461?tl=en",
+        "source_title": "Slack Oauth2 API Credentials for Slack App - Questions",
+        "source_type": "search_result",
+        "evidence_excerpt": "",
+        "checked_at": "2026-08-17T16:44:34.722385+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Slack",
+        "source_url": "https://slack.com/help/articles/48855576908307-Guide-to-Model-Context-Protocol-in-Slack",
+        "source_title": "Guide to Model Context Protocol in Slack",
+        "source_type": "search_result",
+        "evidence_excerpt": "# Guide to Model Context Protocol in Slack\nYou can use the Slack MCP server to connect AI tools to Slack, or set [Slackbot](https://slack.com/help/articles/202026038-How-to-work-with-Slackbot) up as a",
+        "checked_at": "2026-08-17T16:44:34.722385+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Slack",
+        "source_url": "https://docs.slack.dev/ai/slack-mcp-server",
+        "source_title": "Slack MCP server overview",
+        "source_type": "official_docs",
+        "evidence_excerpt": "With the Slack MCP server, your integrated apps can search channels, send messages, and perform other Slack actions through MCP clients.",
+        "checked_at": "2026-08-17T16:44:34.722385+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Slack",
+        "source_url": "https://slack.com/blog/news/mcp-real-time-search-api-now-available",
+        "source_title": "Slack Securely Powers Your Third-Party Agents With ...",
+        "source_type": "search_result",
+        "evidence_excerpt": "Today, we\u2019re thrilled to announce the general availability of Slack\u2019s Real-Time Search (RTS) API and Model Context Protocol (MCP) server.",
+        "checked_at": "2026-08-17T16:44:34.722385+00:00"
+      }
+    ]
+  },
+  "Google Ads": {
+    "app_name": "Google Ads",
+    "category": "Unknown",
+    "website": "developers.google.com",
+    "api": {
+      "api_available": "unknown",
+      "api_types": [],
+      "api_breadth": "unknown",
+      "official_api_docs_url": null
+    },
+    "authentication": {
+      "auth_methods": [],
+      "developer_access": "unknown",
+      "auth_docs_url": null
+    },
+    "webhooks": {
+      "available": "unknown",
+      "docs_url": null
+    },
+    "mcp": {
+      "status": "unknown",
+      "source_url": null
+    },
+    "documentation": {
+      "quality": "unknown",
+      "official_docs": []
+    },
+    "composio": {
+      "currently_supported": "no",
+      "toolkit_slug": null,
+      "toolkit_source_url": null
+    },
+    "recommendation": {
+      "buildability": "UNKNOWN",
+      "priority": "NEEDS_REVIEW",
+      "score": 10,
+      "confidence": 100,
+      "recommendation_reason": "Score: 10. Buildability: UNKNOWN."
+    },
+    "verification": {
+      "verified": false,
+      "unsupported_claims": [],
+      "issues": [
+        "Verification LLM call failed"
+      ],
+      "verifier_notes": "Could not run verification \u2013 LLM unavailable."
+    },
+    "evidence": [
+      {
+        "field": "general",
+        "claim": "Source found for Google Ads",
+        "source_url": "https://developers.google.com/google-ads/api/docs/query/overview",
+        "source_title": "Google Ads Query Language | Google Ads API",
+        "source_type": "official_docs",
+        "evidence_excerpt": "- [GoogleAds API](https://developers.google.com/google-ads/api)\n\n# Google Ads Query Language    Stay organized with collections      Save and categorize content based on your preferences.\n## Query for",
+        "checked_at": "2026-08-17T16:44:57.942873+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Google Ads",
+        "source_url": "https://developers.google.com/google-ads/api",
+        "source_title": "Google Ads API",
+        "source_type": "official_docs",
+        "evidence_excerpt": "- [**GoogleAds API**](https://developers.google.com/google-ads/api)\n\n- [Google Ads API](https://developers.google.com/google-ads/api)",
+        "checked_at": "2026-08-17T16:44:57.942873+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Google Ads",
+        "source_url": "https://groups.google.com/g/adwords-api/c/toQG6LAxM8I",
+        "source_title": "Adding an Ad to a campaign with the Google Ads API",
+        "source_type": "search_result",
+        "evidence_excerpt": "You may refer to this REST endpoint guide for mutating AdGroupAds. You may see the AdGroupAdOperation request body data and check the fields available. Google ...",
+        "checked_at": "2026-08-17T16:44:57.942873+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Google Ads",
+        "source_url": "https://developers.google.com/google-ads/api/docs/oauth/overview",
+        "source_title": "Use OAuth 2.0 to Access Google Ads API",
+        "source_type": "official_docs",
+        "evidence_excerpt": "OAuth 2.0 enables your Google Ads API client app to access a user's Google Ads account without having to handle or store the user's login info. Broadly speaking ...",
+        "checked_at": "2026-08-17T16:44:57.942873+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Google Ads",
+        "source_url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+        "source_title": "Developer Token - Ads API",
+        "source_type": "official_docs",
+        "evidence_excerpt": "The developer token is a 22-character long alphanumeric string that lets your app connect to the Google Ads API. You can obtain one by signing up for one on ...",
+        "checked_at": "2026-08-17T16:44:57.942873+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Google Ads",
+        "source_url": "https://groups.google.com/g/adwords-api/c/segYVhl4V-E",
+        "source_title": "Can I access Google Ads API Without a Developer Token?",
+        "source_type": "search_result",
+        "evidence_excerpt": "You will not be able to access the API if you don't have a developer token. If you account is a test account then you could use the developer token with Test ...",
+        "checked_at": "2026-08-17T16:44:57.942873+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Google Ads",
+        "source_url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+        "source_title": "Google Ads MCP server: Developer integration guide",
+        "source_type": "official_docs",
+        "evidence_excerpt": "# Google Ads MCP server: Developer integration guide    Stay organized with collections      Save and categorize content based on your preferences.\nThe **Model Context Protocol (MCP)** is an open stan",
+        "checked_at": "2026-08-17T16:44:57.942873+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Google Ads",
+        "source_url": "https://www.youtube.com/watch?v=W8yuCZOQ8EA",
+        "source_title": "Introducing the Google Ads MCP Server - YouTube",
+        "source_type": "search_result",
+        "evidence_excerpt": "## Introducing the Google Ads MCP Server\n[24:10\\\nModel Context Protocol (MCP) Explained for Beginners: AI Flight Booking Demo!KodeKloud1.2M views \u2022 1 year agoLivePlaylist ()Mix (50+)](https://www.yout",
+        "checked_at": "2026-08-17T16:44:57.942873+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Google Ads",
+        "source_url": "https://cloud.google.com/blog/products/ai-machine-learning/announcing-official-mcp-support-for-google-services",
+        "source_title": "Announcing official MCP support for Google services | Google Cloud Blog",
+        "source_type": "search_result",
+        "evidence_excerpt": "Anthropic's Model Context Protocol (MCP), often likened to a \"USB-C for AI\", has quickly become a common standard to connect AI models with data ...",
+        "checked_at": "2026-08-17T16:44:57.942873+00:00"
+      }
+    ]
+  },
+  "Shopify": {
+    "app_name": "Shopify",
+    "category": "Unknown",
+    "website": "shopify.dev",
+    "api": {
+      "api_available": "unknown",
+      "api_types": [],
+      "api_breadth": "unknown",
+      "official_api_docs_url": null
+    },
+    "authentication": {
+      "auth_methods": [],
+      "developer_access": "unknown",
+      "auth_docs_url": null
+    },
+    "webhooks": {
+      "available": "unknown",
+      "docs_url": null
+    },
+    "mcp": {
+      "status": "unknown",
+      "source_url": null
+    },
+    "documentation": {
+      "quality": "unknown",
+      "official_docs": []
+    },
+    "composio": {
+      "currently_supported": "no",
+      "toolkit_slug": null,
+      "toolkit_source_url": null
+    },
+    "recommendation": {
+      "buildability": "UNKNOWN",
+      "priority": "NEEDS_REVIEW",
+      "score": 10,
+      "confidence": 100,
+      "recommendation_reason": "Score: 10. Buildability: UNKNOWN."
+    },
+    "verification": {
+      "verified": false,
+      "unsupported_claims": [],
+      "issues": [
+        "Verification LLM call failed"
+      ],
+      "verifier_notes": "Could not run verification \u2013 LLM unavailable."
+    },
+    "evidence": [
+      {
+        "field": "general",
+        "claim": "Source found for Shopify",
+        "source_url": "https://shopify.dev/docs/api/admin-graphql/latest",
+        "source_title": "GraphQL Admin API reference",
+        "source_type": "official_docs",
+        "evidence_excerpt": "# GraphQL Admin API reference\n## [Anchor to Endpoints and queries](https://shopify.dev/docs/api/admin-graphql/latest#endpoints-and-queries) Endpoints and queries\n##### React Router\n```ts\nimport { auth",
+        "checked_at": "2026-08-17T16:45:40.631853+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Shopify",
+        "source_url": "https://shopify.dev/docs/api/admin-rest",
+        "source_title": "REST Admin API reference",
+        "source_type": "official_docs",
+        "evidence_excerpt": "# \n##### Ruby\n```ruby\nbundle add shopify_api\n```\n\n## [Anchor to Endpoints and requests](https://shopify.dev/docs/api/admin-rest#endpoints-and-requests) Endpoints and requests\n##### Node.js\n```ts\nconst",
+        "checked_at": "2026-08-17T16:45:40.631853+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Shopify",
+        "source_url": "https://www.reddit.com/r/shopify/comments/1g2thxv/rest_admin_api_deprecation_and_graphql/",
+        "source_title": "REST Admin API deprecation and GraphQL : r/shopify",
+        "source_type": "search_result",
+        "evidence_excerpt": "The REST docs are now annotated with the equivalent GraphQL call or field. You can use the https://shopify.dev GraphQL generator \u2026 can prompt ...",
+        "checked_at": "2026-08-17T16:45:40.631853+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Shopify",
+        "source_url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+        "source_title": "Authentication and authorization",
+        "source_type": "official_docs",
+        "evidence_excerpt": "This guide introduces the different methods of authenticating and authorizing apps with Shopify's platform. Make sure that you understand the differences ...",
+        "checked_at": "2026-08-17T16:45:40.631853+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Shopify",
+        "source_url": "https://community.shopify.com/t/how-to-get-shopify-access-token-sent-to-dev-dashboard/573988",
+        "source_title": "How to get Shopify Access token - sent to Dev Dashboard?",
+        "source_type": "search_result",
+        "evidence_excerpt": "In your Shopify admin, go to Apps > Apps and sales channels > Develop apps**. Click \u201cAllow. Go to the \u201cAPI credentials\u201d tab, click \u201cInstall app ...",
+        "checked_at": "2026-08-17T16:45:40.631853+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Shopify",
+        "source_url": "https://shopify.dev/docs/api/usage/authentication",
+        "source_title": "Shopify API authentication",
+        "source_type": "official_docs",
+        "evidence_excerpt": "All Shopify APIs require developers to authenticate their interactions with our platform. Learn how to safely and securely connect apps with Shopify's APIs.",
+        "checked_at": "2026-08-17T16:45:40.631853+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Shopify",
+        "source_url": "https://shopify.dev/docs/apps/build/storefront-mcp",
+        "source_title": "About Storefront MCP",
+        "source_type": "official_docs",
+        "evidence_excerpt": "# Storefront MCP\nConnect any AI assistant to real-time commerce data from Shopify stores with Model Context Protocol (MCP) servers.\n\n## [Anchor to Model Context Protocol](https://shopify.dev/docs/apps",
+        "checked_at": "2026-08-17T16:45:40.631853+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Shopify",
+        "source_url": "https://shopify.dev/docs/apps/build/ai-toolkit",
+        "source_title": "Shopify AI Toolkit",
+        "source_type": "official_docs",
+        "evidence_excerpt": "If you prefer MCP, you can connect to Shopify's developer resources through the Dev MCP server. The server runs locally and doesn't require authentication.",
+        "checked_at": "2026-08-17T16:45:40.631853+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Shopify",
+        "source_url": "https://www.getpassionfruit.com/blog/shopify-model-context-protocol-(mcp)-explained-the-ai-ecommerce-revolution",
+        "source_title": "Shopify Model Context Protocol (MCP) for AI Ecommerce",
+        "source_type": "search_result",
+        "evidence_excerpt": "# Shopify Model Context Protocol (MCP) Explained: The AI ecommerce revolution\n## What Is Shopify Model Context Protocol: The Technical Foundation\n### The architecture functions through four essential ",
+        "checked_at": "2026-08-17T16:45:40.631853+00:00"
+      }
+    ]
+  },
+  "DataForSEO": {
+    "app_name": "DataForSEO",
+    "category": "Unknown",
+    "website": "dataforseo.com",
+    "api": {
+      "api_available": "unknown",
+      "api_types": [],
+      "api_breadth": "unknown",
+      "official_api_docs_url": null
+    },
+    "authentication": {
+      "auth_methods": [],
+      "developer_access": "unknown",
+      "auth_docs_url": null
+    },
+    "webhooks": {
+      "available": "unknown",
+      "docs_url": null
+    },
+    "mcp": {
+      "status": "unknown",
+      "source_url": null
+    },
+    "documentation": {
+      "quality": "unknown",
+      "official_docs": []
+    },
+    "composio": {
+      "currently_supported": "no",
+      "toolkit_slug": null,
+      "toolkit_source_url": null
+    },
+    "recommendation": {
+      "buildability": "UNKNOWN",
+      "priority": "NEEDS_REVIEW",
+      "score": 10,
+      "confidence": 100,
+      "recommendation_reason": "Score: 10. Buildability: UNKNOWN."
+    },
+    "verification": {
+      "verified": false,
+      "unsupported_claims": [],
+      "issues": [
+        "Verification LLM call failed"
+      ],
+      "verifier_notes": "Could not run verification \u2013 LLM unavailable."
+    },
+    "evidence": [
+      {
+        "field": "general",
+        "claim": "Source found for DataForSEO",
+        "source_url": "https://docs.dataforseo.com/v3/",
+        "source_title": "DataForSEO Docs",
+        "source_type": "official_docs",
+        "evidence_excerpt": "DataForSEO API is using the REST technology for interchanging data between your application and our service. The data exchange is made through the widely used ...",
+        "checked_at": "2026-08-17T16:46:03.060065+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for DataForSEO",
+        "source_url": "https://dataforseo.com/blog/a-kickstart-guide-to-using-dataforseo-apis",
+        "source_title": "A Kickstart Guide to Using DataForSEO APIs",
+        "source_type": "search_result",
+        "evidence_excerpt": "# A Kickstart Guide to Using DataForSEO APIs\n### Developer guidelines for making requests to DataForSEO API\nYou can create your REST client or use one of the ready-made, officially supported clients f",
+        "checked_at": "2026-08-17T16:46:03.060065+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for DataForSEO",
+        "source_url": "https://www.youtube.com/watch?v=pYuxQLTCT0I",
+        "source_title": "DataForSEO APIs: Developer's Quick Start Guide| w - YouTube",
+        "source_type": "search_result",
+        "evidence_excerpt": "Check out developer guidelines and best practices for leveraging our APIs! Additionally, learn how to use the DataForSEO API with PHP ...",
+        "checked_at": "2026-08-17T16:46:03.060065+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for DataForSEO",
+        "source_url": "https://docs.dataforseo.com/v3/auth/",
+        "source_title": "Authentication \u2013 DataForSEO API v.3",
+        "source_type": "official_docs",
+        "evidence_excerpt": "# Authentication\n```bash\n# Instead of 'login' and 'password' use your credentials from https://app.dataforseo.com/api-access\n\nlogin=\"login\"\n\npassword=\"password\"\n\ncred=\"$(printf ${login}:${password} | ",
+        "checked_at": "2026-08-17T16:46:03.060065+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for DataForSEO",
+        "source_url": "https://dataforseo.com/help-center/how-to-authenticate-with-dataforseo-google-search-serp-api-api-key-setup-and-code-examples",
+        "source_title": "API Key Setup and Code Examples",
+        "source_type": "search_result",
+        "evidence_excerpt": "# How to Authenticate with DataForSEO Google Search SERP API: API Key Setup and Code Examples\n### Step 3 \u2014 Plug the credentials into your environment\n#### Direct API call with cURL\n```\n# Instead of 'l",
+        "checked_at": "2026-08-17T16:46:03.060065+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for DataForSEO",
+        "source_url": "https://dataforseo.com/model-context-protocol",
+        "source_title": "DataForSEO Model Context Protocol",
+        "source_type": "search_result",
+        "evidence_excerpt": "# Empower AI integration with  DataForSEO MCP\n## Get Started With DataForSEO MCP\n```\n{\n     \"mcpServers\": {\n       \"dataforseo\": {\n         \"command\": \"npx\",\n         \"args\": [\"-y\", \"dataforseo-univer",
+        "checked_at": "2026-08-17T16:46:03.060065+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for DataForSEO",
+        "source_url": "https://dataforseo.com/blog/dataforseo-mcp-server-bridging-the-gap-between-ai-models-and-seo-data",
+        "source_title": "Bridging the Gap Between AI Models and SEO Data",
+        "source_type": "search_result",
+        "evidence_excerpt": "# DataForSEO MCP Server: Bridging the Gap Between AI Models and SEO Data\n[\u27a4 What is Model Context Protocol (MCP)?](https://dataforseo.com/blog/dataforseo-mcp-server-bridging-the-gap-between-ai-models-",
+        "checked_at": "2026-08-17T16:46:03.060065+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for DataForSEO",
+        "source_url": "https://github.com/Skobyn/dataforseo-mcp-server",
+        "source_title": "A comprehensive stdio MCP server for DataForSEO API",
+        "source_type": "official_github",
+        "evidence_excerpt": "# SEO Tools MCP Server\nA comprehensive stdio MCP (Model Context Protocol) server for SEO APIs.\n\n# Sign up for Data for Seo\n## Usage\n### Using with Claude or other LLMs\nThis server implements the Model",
+        "checked_at": "2026-08-17T16:46:03.060065+00:00"
+      }
+    ]
+  },
+  "GitHub": {
+    "app_name": "GitHub",
+    "category": "Unknown",
+    "website": "docs.github.com",
+    "api": {
+      "api_available": "unknown",
+      "api_types": [],
+      "api_breadth": "unknown",
+      "official_api_docs_url": null
+    },
+    "authentication": {
+      "auth_methods": [],
+      "developer_access": "unknown",
+      "auth_docs_url": null
+    },
+    "webhooks": {
+      "available": "unknown",
+      "docs_url": null
+    },
+    "mcp": {
+      "status": "unknown",
+      "source_url": null
+    },
+    "documentation": {
+      "quality": "unknown",
+      "official_docs": []
+    },
+    "composio": {
+      "currently_supported": "yes",
+      "toolkit_slug": "github",
+      "toolkit_source_url": "https://composio.dev/toolkits/github"
+    },
+    "recommendation": {
+      "buildability": "UNKNOWN",
+      "priority": "COVERED",
+      "score": 10,
+      "confidence": 100,
+      "recommendation_reason": "Score: 10. Buildability: UNKNOWN."
+    },
+    "verification": {
+      "verified": false,
+      "unsupported_claims": [],
+      "issues": [
+        "Verification LLM call failed"
+      ],
+      "verifier_notes": "Could not run verification \u2013 LLM unavailable."
+    },
+    "evidence": [
+      {
+        "field": "general",
+        "claim": "Source found for GitHub",
+        "source_url": "https://docs.github.com/en/graphql",
+        "source_title": "GitHub GraphQL API documentation",
+        "source_type": "official_docs",
+        "evidence_excerpt": "# GitHub GraphQL API documentation\nTo create integrations, retrieve data, and automate your workflows, use the GitHub GraphQL API. The GitHub GraphQL API offers more precise and flexible queries than ",
+        "checked_at": "2026-08-17T16:46:42.330989+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for GitHub",
+        "source_url": "https://docs.github.com/en/rest",
+        "source_title": "GitHub REST API documentation",
+        "source_type": "official_docs",
+        "evidence_excerpt": "# GitHub REST API documentation\nCreate integrations, retrieve data, and automate your workflows with the GitHub REST API.\n\n## Recommended\n### [Getting started with the REST API](https://docs.github.co",
+        "checked_at": "2026-08-17T16:46:42.330989+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for GitHub",
+        "source_url": "https://github.blog/developer-skills/github/exploring-github-cli-how-to-interact-with-githubs-graphql-api-endpoint/",
+        "source_title": "How to interact with GitHub's GraphQL API endpoint",
+        "source_type": "official_docs",
+        "evidence_excerpt": "## [How is GraphQL used at GitHub?](https://github.blog/developer-skills/github/exploring-github-cli-how-to-interact-with-githubs-graphql-api-endpoint/#how-is-graphql-used-at-github)\nUsing our REST AP",
+        "checked_at": "2026-08-17T16:46:42.330989+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for GitHub",
+        "source_url": "https://github.com/settings/tokens",
+        "source_title": "GitHub token",
+        "source_type": "official_github",
+        "evidence_excerpt": "No information is available for this page.",
+        "checked_at": "2026-08-17T16:46:42.330989+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for GitHub",
+        "source_url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens",
+        "source_title": "Managing your personal access tokens",
+        "source_type": "official_docs",
+        "evidence_excerpt": "Personal access tokens are an alternative to using passwords for authentication to GitHub when using the GitHub API or the command line.",
+        "checked_at": "2026-08-17T16:46:42.330989+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for GitHub",
+        "source_url": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps",
+        "source_title": "Authorizing OAuth apps",
+        "source_type": "official_docs",
+        "evidence_excerpt": "# Authorizing OAuth apps\n## [Web application flow](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps#web-application-flow)\n### [1. Request a user's GitHub identity]",
+        "checked_at": "2026-08-17T16:46:42.330989+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for GitHub",
+        "source_url": "https://github.com/modelcontextprotocol/servers",
+        "source_title": "Model Context Protocol Servers",
+        "source_type": "official_github",
+        "evidence_excerpt": "# Model Context Protocol servers\nThis repository is a collection of _reference implementations_ for the [Model Context Protocol](https://modelcontextprotocol.io/) (MCP), as well as references to commu",
+        "checked_at": "2026-08-17T16:46:42.330989+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for GitHub",
+        "source_url": "https://github.com/modelcontextprotocol",
+        "source_title": "Model Context Protocol",
+        "source_type": "official_github",
+        "evidence_excerpt": "# Model Context Protocol\n## Pinned   Loading\n### Repositories\n#### Most used topics\n[mcp](https://github.com/search?q=topic%3Amcp+org%3Amodelcontextprotocol+fork%3Atrue&type=repositories) [mcp-client]",
+        "checked_at": "2026-08-17T16:46:42.330989+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for GitHub",
+        "source_url": "https://docs.github.com/en/copilot/concepts/context/mcp",
+        "source_title": "About Model Context Protocol (MCP) - GitHub Copilot",
+        "source_type": "official_docs",
+        "evidence_excerpt": "# About Model Context Protocol (MCP)\n## [Overview of Model Context Protocol (MCP)](https://docs.github.com/en/copilot/concepts/context/mcp#overview-of-model-context-protocol-mcp)\n- [Adding MCP servers",
+        "checked_at": "2026-08-17T16:46:42.330989+00:00"
+      }
+    ]
+  },
+  "Notion": {
+    "app_name": "Notion",
+    "category": "Unknown",
+    "website": "developers.notion.com",
+    "api": {
+      "api_available": "unknown",
+      "api_types": [],
+      "api_breadth": "unknown",
+      "official_api_docs_url": null
+    },
+    "authentication": {
+      "auth_methods": [],
+      "developer_access": "unknown",
+      "auth_docs_url": null
+    },
+    "webhooks": {
+      "available": "unknown",
+      "docs_url": null
+    },
+    "mcp": {
+      "status": "unknown",
+      "source_url": null
+    },
+    "documentation": {
+      "quality": "unknown",
+      "official_docs": []
+    },
+    "composio": {
+      "currently_supported": "yes",
+      "toolkit_slug": "notion",
+      "toolkit_source_url": "https://composio.dev/toolkits/notion"
+    },
+    "recommendation": {
+      "buildability": "UNKNOWN",
+      "priority": "COVERED",
+      "score": 10,
+      "confidence": 100,
+      "recommendation_reason": "Score: 10. Buildability: UNKNOWN."
+    },
+    "verification": {
+      "verified": false,
+      "unsupported_claims": [],
+      "issues": [
+        "Verification LLM call failed"
+      ],
+      "verifier_notes": "Could not run verification \u2013 LLM unavailable."
+    },
+    "evidence": [
+      {
+        "field": "general",
+        "claim": "Source found for Notion",
+        "source_url": "https://medium.com/@xuorig/first-look-at-notions-public-api-49baae5572e9",
+        "source_title": "First Look at Notion's Public API | by Marc-Andr\u00e9 Giroux | Medium",
+        "source_type": "search_result",
+        "evidence_excerpt": "GraphQL",
+        "checked_at": "2026-08-17T16:47:07.155822+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Notion",
+        "source_url": "https://developers.notion.com/guides/get-started/overview",
+        "source_title": "Overview - Notion Docs",
+        "source_type": "official_docs",
+        "evidence_excerpt": "## [\u200b](https://developers.notion.com/guides/get-started/overview#using-notion-api)  Using Notion API\nWith the REST API, you can read, create, and update nearly everything in a workspace \u2014 pages, datab",
+        "checked_at": "2026-08-17T16:47:07.155822+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Notion",
+        "source_url": "https://developers.notion.com/reference/intro",
+        "source_title": "Introduction - Notion Docs - Notion API",
+        "source_type": "official_docs",
+        "evidence_excerpt": "## [\u200b](https://developers.notion.com/reference/intro#pagination)  Pagination\n### [\u200b](https://developers.notion.com/reference/intro#how-to-send-a-paginated-request)  How to send a paginated request\n###",
+        "checked_at": "2026-08-17T16:47:07.155822+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Notion",
+        "source_url": "https://developers.notion.com/guides/get-started/authorization",
+        "source_title": "Authorization - Notion Docs",
+        "source_type": "official_docs",
+        "evidence_excerpt": "## [\u200b](https://developers.notion.com/guides/get-started/authorization#internal-connection-auth-flow-set-up)  Internal connection auth flow set-up\n### [\u200b](https://developers.notion.com/guides/get-start",
+        "checked_at": "2026-08-17T16:47:07.155822+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Notion",
+        "source_url": "https://developers.notion.com/workers/guides/oauth",
+        "source_title": "OAuth - Notion Docs",
+        "source_type": "official_docs",
+        "evidence_excerpt": "## [\u200b](https://developers.notion.com/workers/guides/oauth#define-an-oauth-capability)  Define an OAuth capability\n```\nimport { Worker } from \"@notionhq/workers\";\n\nconst worker = new Worker();\nexport d",
+        "checked_at": "2026-08-17T16:47:07.155822+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Notion",
+        "source_url": "https://developers.notion.com/reference/create-a-token",
+        "source_title": "Create a token - Notion Docs",
+        "source_type": "official_docs",
+        "evidence_excerpt": "## Documentation Index\n```\nimport { Client } from \"@notionhq/client\"\n\nconst notion = new Client()\n\nconst response = await notion.oauth.token({\n  client_id: process.env.OAUTH_CLIENT_ID,\n  client_secret",
+        "checked_at": "2026-08-17T16:47:07.155822+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Notion",
+        "source_url": "https://developers.notion.com/guides/mcp/overview",
+        "source_title": "Notion MCP - Notion Docs",
+        "source_type": "official_docs",
+        "evidence_excerpt": "## Documentation Index\nNotion MCP lets an [MCP client](https://developers.notion.com/guides/mcp/common-mcp-clients), such as Claude Code, Cursor, or Codex, connect to your Notion workspace through the",
+        "checked_at": "2026-08-17T16:47:07.155822+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Notion",
+        "source_url": "https://developers.notion.com/guides/mcp/get-started-with-mcp",
+        "source_title": "Connect to Notion MCP - Notion Docs",
+        "source_type": "official_docs",
+        "evidence_excerpt": "## [\u200b](https://developers.notion.com/guides/mcp/get-started-with-mcp#codex)  Codex\n```\n[mcp_servers.notion]\nurl = \"https://mcp.notion.com/mcp\"\n```\n\n## [\u200b](https://developers.notion.com/guides/mcp/get-",
+        "checked_at": "2026-08-17T16:47:07.155822+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Notion",
+        "source_url": "https://github.com/suekou/mcp-notion-server",
+        "source_title": "suekou/mcp-notion-server - GitHub",
+        "source_type": "official_github",
+        "evidence_excerpt": "# Notion MCP Server\n## Quick Start\n```\n{\n  \"mcpServers\": {\n    \"notion\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@suekou/mcp-notion-server\"],\n      \"env\": {\n        \"NOTION_API_TOKEN\": \"your-i",
+        "checked_at": "2026-08-17T16:47:07.155822+00:00"
+      }
+    ]
+  },
+  "Stripe": {
+    "app_name": "Stripe",
+    "category": "Unknown",
+    "website": "docs.stripe.com",
+    "api": {
+      "api_available": "unknown",
+      "api_types": [],
+      "api_breadth": "unknown",
+      "official_api_docs_url": null
+    },
+    "authentication": {
+      "auth_methods": [],
+      "developer_access": "unknown",
+      "auth_docs_url": null
+    },
+    "webhooks": {
+      "available": "unknown",
+      "docs_url": null
+    },
+    "mcp": {
+      "status": "unknown",
+      "source_url": null
+    },
+    "documentation": {
+      "quality": "unknown",
+      "official_docs": []
+    },
+    "composio": {
+      "currently_supported": "no",
+      "toolkit_slug": null,
+      "toolkit_source_url": null
+    },
+    "recommendation": {
+      "buildability": "UNKNOWN",
+      "priority": "NEEDS_REVIEW",
+      "score": 10,
+      "confidence": 100,
+      "recommendation_reason": "Score: 10. Buildability: UNKNOWN."
+    },
+    "verification": {
+      "verified": false,
+      "unsupported_claims": [],
+      "issues": [
+        "Verification LLM call failed"
+      ],
+      "verifier_notes": "Could not run verification \u2013 LLM unavailable."
+    },
+    "evidence": [
+      {
+        "field": "general",
+        "claim": "Source found for Stripe",
+        "source_url": "https://docs.stripe.com/api",
+        "source_title": "Stripe API Reference",
+        "source_type": "official_docs",
+        "evidence_excerpt": "# [API Reference](https://docs.stripe.com/api)\nThe Stripe API is organized around [REST](http://en.wikipedia.org/wiki/Representational_State_Transfer).\n\n## Not a developer?\n```\nhttps://api.stripe.com\n",
+        "checked_at": "2026-08-17T16:47:19.862294+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Stripe",
+        "source_url": "https://docs.stripe.com/use-stripe-apps/adobe-commerce/payments/custom-storefront",
+        "source_title": "Build a custom storefront",
+        "source_type": "official_docs",
+        "evidence_excerpt": "# Build a customstorefront\n## Learn how to build a custom storefront that supports Stripe payment features.\nYou can use the REST API or GraphQL API to build custom storefronts, such as progressive web",
+        "checked_at": "2026-08-17T16:47:19.862294+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Stripe",
+        "source_url": "https://www.apollographql.com/graphos/apollo-connectors/stripe",
+        "source_title": "Connect Stripe Payment APIs",
+        "source_type": "search_result",
+        "evidence_excerpt": "Connect with Stripe's RESTful API to accept payments, manage revenue, and embed financial services. Easily join Stripe data with internal and external APIs ...",
+        "checked_at": "2026-08-17T16:47:19.862294+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Stripe",
+        "source_url": "https://docs.stripe.com/keys",
+        "source_title": "API keys | Stripe Documentation",
+        "source_type": "official_docs",
+        "evidence_excerpt": "Use the Developers Dashboard to create, reveal, delete, and rotate API keys. You can access your API keys on the API keys tab.",
+        "checked_at": "2026-08-17T16:47:19.862294+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Stripe",
+        "source_url": "https://docs.stripe.com/stripe-apps/api-authentication/oauth",
+        "source_title": "OAuth 2.0",
+        "source_type": "official_docs",
+        "evidence_excerpt": "You'll need to use the app developer API Key for the relevant link type used in the install step. Link, API Key. Live mode link, app developer live mode API key.",
+        "checked_at": "2026-08-17T16:47:19.862294+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Stripe",
+        "source_url": "https://docs.stripe.com/stripe-apps/api-authentication",
+        "source_title": "API authentication methods",
+        "source_type": "official_docs",
+        "evidence_excerpt": "# API authenticationmethods\n## Configure\n```\n{\n  \"id\": \"com.example.app\",\n  \"version\": \"0.0.1\",\n  \"name\": \"Your Stripe App\",\n  \"distribution_type\": \"public\",\n  \"permissions\": [],\n  \"stripe_api_access_",
+        "checked_at": "2026-08-17T16:47:19.862294+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Stripe",
+        "source_url": "https://docs.stripe.com/mcp",
+        "source_title": "Model Context Protocol (MCP) - Stripe Documentation",
+        "source_type": "official_docs",
+        "evidence_excerpt": "# Model Context Protocol(MCP) [Public preview](https://docs.stripe.com/release-phases)\n## Let your AI agents interact with the Stripe API by using our MCP server.\nAsk about this page\n\nCopy for LLM\n\nTh",
+        "checked_at": "2026-08-17T16:47:19.862294+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Stripe",
+        "source_url": "https://www.youtube.com/watch?v=rtGlC0-GuJw",
+        "source_title": "Multiple Ways to Use MCPs with Stripe - YouTube",
+        "source_type": "search_result",
+        "evidence_excerpt": "... MCP (Model Context Protocol) to supercharge your AI agents, automations, developer cycle and workflows. The Stripe MCP server exposes ...",
+        "checked_at": "2026-08-17T16:47:19.862294+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Stripe",
+        "source_url": "https://mcpservers.org/servers/stripe-mcp-server",
+        "source_title": "Official Stripe MCP Server",
+        "source_type": "search_result",
+        "evidence_excerpt": "# Stripe MCP\n## Model Context Protocol (MCP)\nStripe hosts a remote MCP server at `https://mcp.stripe.com`.\n\n## Agent skills\n### Codex\n```bash\ncodex plugin add stripe@openai-curated\n```\n\n## Manual inst",
+        "checked_at": "2026-08-17T16:47:19.862294+00:00"
+      }
+    ]
+  },
+  "NotebookLM": {
+    "app_name": "NotebookLM",
+    "category": "Unknown",
+    "website": "docs.cloud.google.com",
+    "api": {
+      "api_available": "unknown",
+      "api_types": [],
+      "api_breadth": "unknown",
+      "official_api_docs_url": null
+    },
+    "authentication": {
+      "auth_methods": [],
+      "developer_access": "unknown",
+      "auth_docs_url": null
+    },
+    "webhooks": {
+      "available": "unknown",
+      "docs_url": null
+    },
+    "mcp": {
+      "status": "unknown",
+      "source_url": null
+    },
+    "documentation": {
+      "quality": "unknown",
+      "official_docs": []
+    },
+    "composio": {
+      "currently_supported": "no",
+      "toolkit_slug": null,
+      "toolkit_source_url": null
+    },
+    "recommendation": {
+      "buildability": "UNKNOWN",
+      "priority": "NEEDS_REVIEW",
+      "score": 10,
+      "confidence": 100,
+      "recommendation_reason": "Score: 10. Buildability: UNKNOWN."
+    },
+    "verification": {
+      "verified": false,
+      "unsupported_claims": [],
+      "issues": [
+        "Verification LLM call failed"
+      ],
+      "verifier_notes": "Could not run verification \u2013 LLM unavailable."
+    },
+    "evidence": [
+      {
+        "field": "general",
+        "claim": "Source found for NotebookLM",
+        "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+        "source_title": "Create and manage notebooks (API) | Gemini Notebook Enterprise",
+        "source_type": "official_docs",
+        "evidence_excerpt": "# Create and manage notebooks (API)    Stay organized with collections      Save and categorize content based on your preferences.\n## Create a notebook\n### REST\n```\n{\n\"title\": \"NOTEBOOK_TITLE\",\n\"noteb",
+        "checked_at": "2026-08-17T16:47:46.205686+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for NotebookLM",
+        "source_url": "https://www.reddit.com/r/notebooklm/comments/1eti9iz/api_for_notebooklm/",
+        "source_title": "API for NotebookLM - Reddit",
+        "source_type": "official_docs",
+        "evidence_excerpt": "We just launched an unofficial API for Notebook LM. https://autocontentapi.com. At the moment it supports links, youtube videos and plain text.",
+        "checked_at": "2026-08-17T16:47:46.205686+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for NotebookLM",
+        "source_url": "https://github.com/gnh1201/notebooklm-rest-api",
+        "source_title": "gnh1201/notebooklm-rest-api - GitHub",
+        "source_type": "official_github",
+        "evidence_excerpt": "A REST API wrapper for Google NotebookLM. It allows you to manage Notebooks, add sources, perform Q&A, generate artifacts, and download outputs via HTTP.",
+        "checked_at": "2026-08-17T16:47:46.205686+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for NotebookLM",
+        "source_url": "https://developers.google.com/identity/protocols/oauth2",
+        "source_title": "Using OAuth 2.0 to Access Google APIs | Authorization",
+        "source_type": "official_docs",
+        "evidence_excerpt": "Basic steps \u00b7 1. Obtain OAuth 2.0 credentials from the Google API Console. \u00b7 2. Obtain an access token from the Google Authorization Server. \u00b7 3.",
+        "checked_at": "2026-08-17T16:47:46.205686+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for NotebookLM",
+        "source_url": "https://www.facebook.com/groups/CFprogrammers/posts/10159229889905036/",
+        "source_title": "api manager oauth authentication issues with api key",
+        "source_type": "search_result",
+        "evidence_excerpt": "If the API uses OAuth or token authentication, the user or application must request an access token. Developers can generate personal access ...",
+        "checked_at": "2026-08-17T16:47:46.205686+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for NotebookLM",
+        "source_url": "https://github.com/PleasePrompto/notebooklm-mcp",
+        "source_title": "MCP server for NotebookLM - Let your AI agents (Claude Code ... - GitHub",
+        "source_type": "official_github",
+        "evidence_excerpt": "MCP server for Google NotebookLM. It drives a real Chrome via Patchright so an agent can chat against a notebook, ingest sources, generate audio overviews, and ...",
+        "checked_at": "2026-08-17T16:47:46.205686+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for NotebookLM",
+        "source_url": "https://www.xda-developers.com/notebooklm-connects-to-claude-through-mcp/",
+        "source_title": "NotebookLM now connects to Claude through MCP, and it's the best ...",
+        "source_type": "official_docs",
+        "evidence_excerpt": "An MCP server bridges that gap, allowing Claude to interact directly with NotebookLM and get results back, all without you manually jumping ...",
+        "checked_at": "2026-08-17T16:47:46.205686+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for NotebookLM",
+        "source_url": "https://mcpmarket.com/server/notebooklm",
+        "source_title": "Google NotebookLM Automation Tool - MCP Market",
+        "source_type": "search_result",
+        "evidence_excerpt": "NotebookLM is a professional Model Context Protocol (MCP) server designed to streamline and automate interactions with Google's NotebookLM.",
+        "checked_at": "2026-08-17T16:47:46.205686+00:00"
+      }
+    ]
+  }
+}

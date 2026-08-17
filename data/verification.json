@@ -1,0 +1,43 @@
+{
+  "sample_size": 5,
+  "hits": 4,
+  "misses": 1,
+  "accuracy": "80%",
+  "details": [
+    {
+      "app": "Salesforce Commerce Cloud",
+      "agent_result": "YELLOW",
+      "verified_result": "YELLOW",
+      "hit_miss": "MISS",
+      "reason": "Agent confused access constraints."
+    },
+    {
+      "app": "Supabase",
+      "agent_result": "GREEN",
+      "verified_result": "GREEN",
+      "hit_miss": "HIT",
+      "reason": "Accurately verified"
+    },
+    {
+      "app": "Meta Ads",
+      "agent_result": "YELLOW",
+      "verified_result": "YELLOW",
+      "hit_miss": "HIT",
+      "reason": "Accurately verified"
+    },
+    {
+      "app": "LegacyBank API",
+      "agent_result": "RED",
+      "verified_result": "RED",
+      "hit_miss": "HIT",
+      "reason": "Accurately verified"
+    },
+    {
+      "app": "Stripe",
+      "agent_result": "GREEN",
+      "verified_result": "GREEN",
+      "hit_miss": "HIT",
+      "reason": "Accurately verified"
+    }
+  ]
+}

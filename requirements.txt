@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pydantic
+httpx
+pandas
+langgraph
+google-genai
+firecrawl-py
+python-dotenv

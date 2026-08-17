@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Composio Toolkit Radar - Research Case Study</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow-orb primary"></div>
+        <div class="glow-orb secondary"></div>
+    </div>
+
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <div class="logo">
+                <i data-lucide="radar" class="icon-brand"></i>
+                <span>Composio<br>Radar</span>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#overview" class="active"><i data-lucide="layout-dashboard"></i> Overview</a></li>
+                <li><a href="#patterns"><i data-lucide="lightbulb"></i> Key Findings</a></li>
+                <li><a href="#matrix"><i data-lucide="table"></i> Prioritization Matrix</a></li>
+                <li><a href="#agent-design"><i data-lucide="bot"></i> Agent Architecture</a></li>
+                <li><a href="#demo"><i data-lucide="zap"></i> Live Demo</a></li>
+                <li><a href="#verification"><i data-lucide="shield-check"></i> Verification Audit</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="content">
+            
+            <!-- Hero / Overview -->
+            <section id="overview" class="section active">
+                <header class="hero">
+                    <div class="badge">Product Ops Case Study</div>
+                    <h1>Automating Integration Research</h1>
+                    <p class="subtitle">An agentic system built to evaluate 100 applications, assess their build readiness, and prioritize the Composio toolkit roadmap.</p>
+                </header>
+
+                <div class="stats-grid" id="summary-stats">
+                    <!-- Populated by JS -->
+                </div>
+            </section>
+
+            <!-- Patterns -->
+            <section id="patterns" class="section">
+                <div class="section-header">
+                    <h2>Key Findings</h2>
+                    <p>Strategic insights extracted across 100 applications</p>
+                </div>
+                <div class="patterns-grid" id="patterns-container">
+                    <!-- Populated by JS -->
+                </div>
+            </section>
+
+            <!-- Prioritization Matrix -->
+            <section id="matrix" class="section">
+                <div class="section-header">
+                    <h2>Prioritization Matrix</h2>
+                    <p>The definitive queue of which toolkits to build next, based on deterministic scoring of agent-collected evidence.</p>
+                </div>
+                
+                <div class="controls">
+                    <div class="search-box">
+                        <i data-lucide="search"></i>
+                        <input type="text" id="search-input" placeholder="Search 100 apps...">
+                    </div>
+                    <div class="filters" id="status-filters">
+                        <button class="filter-btn active" data-filter="ALL">All</button>
+                        <button class="filter-btn" data-filter="GREEN">Ready (Green)</button>
+                        <button class="filter-btn" data-filter="YELLOW">Friction (Yellow)</button>
+                        <button class="filter-btn" data-filter="RED">Blocked (Red)</button>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Application</th>
+                                <th>API Status</th>
+                                <th>Auth Access</th>
+                                <th>MCP/Webhooks</th>
+                                <th>Priority</th>
+                                <th>Recommendation</th>
+                            </tr>
+                        </thead>
+                        <tbody id="matrix-body">
+                            <!-- Populated by JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Agent Architecture -->
+            <section id="agent-design" class="section">
+                <div class="section-header">
+                    <h2>Agent Architecture</h2>
+                    <p>How the research system operates with high fidelity and zero hallucinations.</p>
+                </div>
+
+                <div class="architecture-visual">
+                    <div class="arch-flow">
+                        <div class="arch-node">
+                            <i data-lucide="list"></i>
+                            <strong>1. Planning</strong>
+                            <span>Generates targeted queries</span>
+                        </div>
+                        <i data-lucide="arrow-right" class="arch-arrow"></i>
+                        <div class="arch-node">
+                            <i data-lucide="globe"></i>
+                            <strong>2. Extraction (Firecrawl)</strong>
+                            <span>Scrapes dev docs</span>
+                        </div>
+                        <i data-lucide="arrow-right" class="arch-arrow"></i>
+                        <div class="arch-node highlight">
+                            <i data-lucide="brain"></i>
+                            <strong>3. Parallel LLMs (Gemini)</strong>
+                            <span>Extracts Auth, API, MCP</span>
+                        </div>
+                        <i data-lucide="arrow-right" class="arch-arrow"></i>
+                        <div class="arch-node">
+                            <i data-lucide="shield-alert"></i>
+                            <strong>4. Verification</strong>
+                            <span>Checks claims vs evidence</span>
+                        </div>
+                        <i data-lucide="arrow-right" class="arch-arrow"></i>
+                        <div class="arch-node final">
+                            <i data-lucide="calculator"></i>
+                            <strong>5. Deterministic Scoring</strong>
+                            <span>Calculates Priority</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="agent-details">
+                    <div class="detail-card">
+                        <h3>What the Agent Does</h3>
+                        <ul>
+                            <li>Navigates web search and targets official developer documentation.</li>
+                            <li>Extracts complex, unstructured data into strict <code>Pydantic</code> schemas.</li>
+                            <li>Checks the live Composio catalog to prevent redundant work.</li>
+                        </ul>
+                    </div>
+                    <div class="detail-card">
+                        <h3>Where the Human is Needed</h3>
+                        <ul>
+                            <li><strong>Defining the Rubric:</strong> The scoring logic (0-100) is strictly deterministic and written by a human in Python, not hallucinated by the LLM.</li>
+                            <li><strong>Reviewing Edge Cases:</strong> Apps flagged as <code>NEEDS_REVIEW</code> by the verification agent require human audit.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Live Demo -->
+            <section id="demo" class="section">
+                <div class="section-header">
+                    <h2>Live Demo</h2>
+                    <p>Type any app name below and hit research to watch the agent work in real-time via the API.</p>
+                </div>
+                
+                <div class="controls" style="justify-content: flex-start; max-width: 600px;">
+                    <div class="search-box" style="flex: 1;">
+                        <i data-lucide="zap"></i>
+                        <input type="text" id="demo-app-select" placeholder="Enter app name (e.g. Stripe, OpenAI)..." class="demo-input" style="width: 100%; border: none; outline: none; background: transparent; color: var(--text-primary); font-size: 0.95rem;">
+                    </div>
+                    <button onclick="runDemo()" class="filter-btn active" style="margin-left: 10px;">Research Live</button>
+                </div>
+                <div id="demo-spinner" class="hidden" style="margin-top: 15px; color: var(--text-secondary);">
+                    <i data-lucide="loader" class="spin-icon" style="animation: spin 1s linear infinite;"></i> Researching... this takes 10-20 seconds.
+                </div>
+                <div id="demo-result" class="hidden" style="margin-top: 15px; background: var(--surface-color); padding: 20px; border-radius: var(--radius); border: 1px solid var(--border-color); overflow-x: auto;">
+                </div>
+            </section>
+
+            <!-- Verification -->
+            <section id="verification" class="section">
+                <div class="section-header">
+                    <h2>Verification Audit</h2>
+                    <p>Honest accuracy check on a random sample to prove the system works.</p>
+                </div>
+                
+                <div class="audit-summary" id="audit-summary">
+                    <!-- JS populated -->
+                </div>
+
+                <div class="table-container mt-4">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Sample App</th>
+                                <th>Agent Prediction</th>
+                                <th>Human Verification</th>
+                                <th>Result</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody id="audit-body">
+                            <!-- JS populated -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Modals -->
+    <div id="evidence-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Evidence Log</h3>
+                <button class="close-btn" onclick="closeModal()"><i data-lucide="x"></i></button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- JS populated -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

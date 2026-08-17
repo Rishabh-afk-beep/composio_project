@@ -1,0 +1,52 @@
+{
+  "total_researched": 5,
+  "green_count": 2,
+  "yellow_count": 2,
+  "red_count": 1,
+  "unknown_count": 0,
+  "covered_count": 1,
+  "priority_breakdown": {
+    "P0": 1,
+    "P1": 2,
+    "P2": 0,
+    "HOLD": 1,
+    "NEEDS_REVIEW": 0,
+    "COVERED": 1
+  },
+  "aggregate": {
+    "has_api": 4,
+    "self_serve_access": 2,
+    "has_oauth": 4,
+    "has_webhooks": 4,
+    "has_mcp_official": 2,
+    "has_mcp_any": 3
+  },
+  "category_scores": {
+    "E-Commerce": {
+      "count": 1,
+      "total_score": 65,
+      "avg_score": 65.0
+    },
+    "Database": {
+      "count": 1,
+      "total_score": 95,
+      "avg_score": 95.0
+    },
+    "Marketing": {
+      "count": 1,
+      "total_score": 75,
+      "avg_score": 75.0
+    },
+    "Finance": {
+      "count": 2,
+      "total_score": 110,
+      "avg_score": 55.0
+    }
+  },
+  "patterns": [
+    "The bottleneck is access, not API existence. 80% of apps have APIs, but only 40% offer self-serve developer access.",
+    "Self-serve developer access is a stronger build signal than API presence alone. 40% of the 5 apps have self-serve access.",
+    "MCP adoption is still early. Only 60% of apps have any MCP server (official or community), vs 80% with APIs.",
+    "Composio already covers 1 of the 5 target apps."
+  ]
+}

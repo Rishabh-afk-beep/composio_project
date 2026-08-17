@@ -1,0 +1,130 @@
+[
+  {
+    "app_name": "Salesforce Commerce Cloud",
+    "category": "E-Commerce",
+    "api": {
+      "api_available": "yes",
+      "api_types": ["REST", "OCAPI"],
+      "api_breadth": "high"
+    },
+    "authentication": {
+      "auth_methods": ["OAuth2"],
+      "developer_access": "partner_gated"
+    },
+    "webhooks": {
+      "available": "yes"
+    },
+    "mcp": {
+      "status": "none_found"
+    },
+    "recommendation": {
+      "buildability": "YELLOW",
+      "priority": "P1",
+      "score": 65,
+      "recommendation_reason": "High demand enterprise tool, but partner gating makes automated account creation difficult."
+    }
+  },
+  {
+    "app_name": "Supabase",
+    "category": "Database",
+    "api": {
+      "api_available": "yes",
+      "api_types": ["REST", "GraphQL"],
+      "api_breadth": "high"
+    },
+    "authentication": {
+      "auth_methods": ["PAT", "OAuth2"],
+      "developer_access": "self_serve"
+    },
+    "webhooks": {
+      "available": "yes"
+    },
+    "mcp": {
+      "status": "community"
+    },
+    "recommendation": {
+      "buildability": "GREEN",
+      "priority": "P0",
+      "score": 95,
+      "recommendation_reason": "Excellent self-serve developer access and comprehensive APIs. High priority to build."
+    }
+  },
+  {
+    "app_name": "Meta Ads",
+    "category": "Marketing",
+    "api": {
+      "api_available": "yes",
+      "api_types": ["Graph API"],
+      "api_breadth": "high"
+    },
+    "authentication": {
+      "auth_methods": ["OAuth2"],
+      "developer_access": "approval_required"
+    },
+    "webhooks": {
+      "available": "yes"
+    },
+    "mcp": {
+      "status": "official"
+    },
+    "recommendation": {
+      "buildability": "YELLOW",
+      "priority": "P1",
+      "score": 75,
+      "recommendation_reason": "API is powerful but app approval process creates significant friction for end users."
+    }
+  },
+  {
+    "app_name": "LegacyBank API",
+    "category": "Finance",
+    "api": {
+      "api_available": "unknown",
+      "api_types": [],
+      "api_breadth": "unknown"
+    },
+    "authentication": {
+      "auth_methods": [],
+      "developer_access": "private"
+    },
+    "webhooks": {
+      "available": "no"
+    },
+    "mcp": {
+      "status": "none_found"
+    },
+    "recommendation": {
+      "buildability": "RED",
+      "priority": "HOLD",
+      "score": 10,
+      "recommendation_reason": "No public API or developer access available. Cannot build."
+    }
+  },
+  {
+    "app_name": "Stripe",
+    "category": "Finance",
+    "api": {
+      "api_available": "yes",
+      "api_types": ["REST"],
+      "api_breadth": "high"
+    },
+    "authentication": {
+      "auth_methods": ["API Key", "OAuth2"],
+      "developer_access": "self_serve"
+    },
+    "webhooks": {
+      "available": "yes"
+    },
+    "mcp": {
+      "status": "official"
+    },
+    "composio": {
+      "currently_supported": "yes"
+    },
+    "recommendation": {
+      "buildability": "GREEN",
+      "priority": "COVERED",
+      "score": 100,
+      "recommendation_reason": "Gold standard developer experience."
+    }
+  }
+]

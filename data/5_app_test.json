@@ -1,0 +1,687 @@
+{
+  "Supabase": {
+    "app_name": "Supabase",
+    "category": "Unknown",
+    "website": "supabase.com",
+    "api": {
+      "api_available": "unknown",
+      "api_types": [],
+      "api_breadth": "unknown",
+      "official_api_docs_url": null
+    },
+    "authentication": {
+      "auth_methods": [],
+      "developer_access": "unknown",
+      "auth_docs_url": null
+    },
+    "webhooks": {
+      "available": "unknown",
+      "docs_url": null
+    },
+    "mcp": {
+      "status": "unknown",
+      "source_url": null
+    },
+    "documentation": {
+      "quality": "unknown",
+      "official_docs": []
+    },
+    "composio": {
+      "currently_supported": "yes",
+      "toolkit_slug": "supabase",
+      "toolkit_source_url": "https://composio.dev/toolkits/supabase"
+    },
+    "recommendation": {
+      "buildability": "UNKNOWN",
+      "priority": "COVERED",
+      "score": 10,
+      "confidence": 0,
+      "recommendation_reason": "Could not generate analyst reason due to error: Gemini daily quota exhausted"
+    },
+    "verification": {
+      "status": "unavailable",
+      "unsupported_claims": [],
+      "issues": [
+        "Verification LLM call failed"
+      ],
+      "verifier_notes": "Could not run verification \u2013 LLM unavailable."
+    },
+    "evidence": [
+      {
+        "field": "general",
+        "claim": "Source found for Supabase",
+        "source_url": "https://supabase.com/docs/guides/api",
+        "source_title": "Data REST API | Supabase Docs",
+        "source_type": "official_docs",
+        "evidence_excerpt": "REST API\n\n## Features [#](https://supabase.com/docs/guides/api#rest-api-overview)\n- **Self documenting:** Supabase generates documentation in the Dashboard which updates as you make database changes.\n",
+        "checked_at": "2026-08-17 17:02:38.212352+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Supabase",
+        "source_url": "https://supabase.com/docs/guides/graphql",
+        "source_title": "GraphQL | Supabase Docs",
+        "source_type": "official_docs",
+        "evidence_excerpt": "GraphQL\n\n## Clients [#](https://supabase.com/docs/guides/graphql#clients)\n### Supabase Studio [#](https://supabase.com/docs/guides/graphql#supabase-studio)\n```\n1\ncomment on schema public is e'@graphql",
+        "checked_at": "2026-08-17 17:02:38.212352+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Supabase",
+        "source_url": "https://supabase.com/blog/simplify-backend-with-data-api",
+        "source_title": "Simplifying back-end complexity with Supabase Data APIs",
+        "source_type": "official_site",
+        "evidence_excerpt": "# Simplifying back-end complexity with Supabase Data APIs\n## **How Supabase auto-generates APIs from your data model** [#](https://supabase.com/blog/simplify-backend-with-data-api#how-supabase-auto-ge",
+        "checked_at": "2026-08-17 17:02:38.212352+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Supabase",
+        "source_url": "https://supabase.com/docs/guides/integrations/build-a-supabase-oauth-integration",
+        "source_title": "Build a Supabase Integration",
+        "source_type": "official_docs",
+        "evidence_excerpt": "Using OAuth2.0 you can retrieve an access and refresh token that grant your application full access to the Management API on behalf of the user.",
+        "checked_at": "2026-08-17 17:02:38.212352+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Supabase",
+        "source_url": "https://supabase.com/docs/guides/auth/oauth-server",
+        "source_title": "OAuth 2.1 Server | Supabase Docs",
+        "source_type": "official_docs",
+        "evidence_excerpt": "The application uses the access token to make authenticated API requests Access tokens are standard Supabase JWTs that include user_id , role , and client_id ...",
+        "checked_at": "2026-08-17 17:02:38.212352+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Supabase",
+        "source_url": "https://www.reddit.com/r/Supabase/comments/1pzxoma/how_do_you_manage_api_key_authentication_in_your/",
+        "source_title": "How do you manage API Key authentication in your ...",
+        "source_type": "community",
+        "evidence_excerpt": "Use API_KEY like username and API_SECRET like the password. This is quite straighforward and it will benefit from being able to use the same ...",
+        "checked_at": "2026-08-17 17:02:38.212352+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Supabase",
+        "source_url": "https://supabase.com/docs/guides/ai-tools/mcp",
+        "source_title": "Supabase MCP Server",
+        "source_type": "official_docs",
+        "evidence_excerpt": "## Manual authentication [#](https://supabase.com/docs/guides/ai-tools/mcp#manual-authentication)\n### CI environment [#](https://supabase.com/docs/guides/ai-tools/mcp#ci-environment)\n```\n1\n{\n2\n     \"m",
+        "checked_at": "2026-08-17 17:02:38.212352+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Supabase",
+        "source_url": "https://supabase.com/blog/mcp-server",
+        "source_title": "Supabase MCP Server",
+        "source_type": "official_site",
+        "evidence_excerpt": "# Supabase MCP Server\n## What is an MCP Server? [#](https://supabase.com/blog/mcp-server#what-is-an-mcp-server)\nMCP stands for [Model Context Protocol](https://modelcontextprotocol.io/).\n\n## Setup [#]",
+        "checked_at": "2026-08-17 17:02:38.212352+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Supabase",
+        "source_url": "https://github.com/supabase/mcp",
+        "source_title": "Supabase MCP Server",
+        "source_type": "official_github",
+        "evidence_excerpt": "# Supabase MCP Server\nThe [Model Context Protocol](https://modelcontextprotocol.io/introduction) (MCP) standardizes how Large Language Models (LLMs) talk to external services like Supabase.\n\n## Resour",
+        "checked_at": "2026-08-17 17:02:38.212352+00:00"
+      }
+    ],
+    "errors": [
+      "API_RESEARCHER: Gemini daily quota exhausted",
+      "AUTH_RESEARCHER: Gemini daily quota exhausted",
+      "MCP_RESEARCHER: Gemini daily quota exhausted",
+      "VERIFIER: Gemini daily quota exhausted"
+    ]
+  },
+  "Salesforce": {
+    "app_name": "Salesforce",
+    "category": "Unknown",
+    "website": "developer.salesforce.com",
+    "api": {
+      "api_available": "unknown",
+      "api_types": [],
+      "api_breadth": "unknown",
+      "official_api_docs_url": null
+    },
+    "authentication": {
+      "auth_methods": [],
+      "developer_access": "unknown",
+      "auth_docs_url": null
+    },
+    "webhooks": {
+      "available": "unknown",
+      "docs_url": null
+    },
+    "mcp": {
+      "status": "unknown",
+      "source_url": null
+    },
+    "documentation": {
+      "quality": "unknown",
+      "official_docs": []
+    },
+    "composio": {
+      "currently_supported": "no",
+      "toolkit_slug": null,
+      "toolkit_source_url": null
+    },
+    "recommendation": {
+      "buildability": "UNKNOWN",
+      "priority": "NEEDS_REVIEW",
+      "score": 10,
+      "confidence": 0,
+      "recommendation_reason": "Could not generate analyst reason due to error: Gemini daily quota exhausted"
+    },
+    "verification": {
+      "status": "unavailable",
+      "unsupported_claims": [],
+      "issues": [
+        "Verification LLM call failed"
+      ],
+      "verifier_notes": "Could not run verification \u2013 LLM unavailable."
+    },
+    "evidence": [
+      {
+        "field": "general",
+        "claim": "Source found for Salesforce",
+        "source_url": "https://developer.salesforce.com/docs/platform/graphql/overview",
+        "source_title": "GraphQL API",
+        "source_type": "official_docs",
+        "evidence_excerpt": "GraphQL API",
+        "checked_at": "2026-08-17 17:02:45.462968+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Salesforce",
+        "source_url": "https://developer.salesforce.com/docs/platform/graphql/guide/requests-and-responses.html",
+        "source_title": "Requests and Responses | Schema Structure | GraphQL API",
+        "source_type": "official_docs",
+        "evidence_excerpt": "# GraphQL Request and Response Structure\n## Request\n```\n1{\n2  \"query\": \"query accounts {\n3      uiapi {\n4          query {\n5              Account {\n6                  edges {\n7                      no",
+        "checked_at": "2026-08-17 17:02:45.462968+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Salesforce",
+        "source_url": "https://developer.salesforce.com/docs/apis",
+        "source_title": "API Library | Salesforce Developers",
+        "source_type": "official_docs",
+        "evidence_excerpt": "# Salesforce APIs\n## Browse all APIs.\n[API**GraphQL API**Aggregate records, request explicit fields, introspect the schema, and more with the GraphQL API for Salesforce. GraphQL is an open-source data",
+        "checked_at": "2026-08-17 17:02:45.462968+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Salesforce",
+        "source_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm",
+        "source_title": "Authorization Through External Client Apps or Connected ...",
+        "source_type": "official_docs",
+        "evidence_excerpt": "OAuth authorization flows grant a client app restricted access to REST API resources on a resource server. Each OAuth flow offers a different process for ...",
+        "checked_at": "2026-08-17 17:02:45.462968+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Salesforce",
+        "source_url": "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/intro_using_oauth.html",
+        "source_title": "OAuth and Connect REST API",
+        "source_type": "official_docs",
+        "evidence_excerpt": "Connect REST API uses OAuth to securely identify your application before connecting to Salesforce. To use Connect REST API, create a REST entry point.",
+        "checked_at": "2026-08-17 17:02:45.462968+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Salesforce",
+        "source_url": "https://trailhead.salesforce.com/trailblazer-community/feed/0D54V00007T48bRSAR",
+        "source_title": "how to get api key and security key - Trailhead - Salesforce",
+        "source_type": "search_result",
+        "evidence_excerpt": "how to get api key and security key",
+        "checked_at": "2026-08-17 17:02:45.462968+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Salesforce",
+        "source_url": "https://admin.salesforce.com/blog/2025/what-is-mcp-a-simple-guide-to-model-context-protocol-for-salesforce-admins",
+        "source_title": "What Is MCP? A Simple Guide to Model Context Protocol ...",
+        "source_type": "search_result",
+        "evidence_excerpt": "# What Is MCP? A Simple Guide to Model Context Protocol for Salesforce Admins\n## Context is king\n- **Server:** Exposes data, prompts, and actions",
+        "checked_at": "2026-08-17 17:02:45.462968+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Salesforce",
+        "source_url": "https://www.salesforce.com/agentforce/mcp-support/model-context-protocol/",
+        "source_title": "Model Context Protocol: What Is MCP for Generative AI?",
+        "source_type": "search_result",
+        "evidence_excerpt": "The Model Context Protocol (MCP) is a standardized communication protocol designed to link AI models to the specific context they need to function effectively.",
+        "checked_at": "2026-08-17 17:02:45.462968+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Salesforce",
+        "source_url": "https://github.com/smn2gnt/MCP-Salesforce",
+        "source_title": "MCP Salesforce connector",
+        "source_type": "official_github",
+        "evidence_excerpt": "# MCP Salesforce Connector\nA Model Context Protocol (MCP) server implementation for Salesforce integration, allowing LLMs to interact with Salesforce data through SOQL queries and SOSL searches.\n\n## C",
+        "checked_at": "2026-08-17 17:02:45.462968+00:00"
+      }
+    ],
+    "errors": [
+      "API_RESEARCHER: Gemini daily quota exhausted",
+      "AUTH_RESEARCHER: Gemini daily quota exhausted",
+      "MCP_RESEARCHER: Gemini daily quota exhausted",
+      "VERIFIER: Gemini daily quota exhausted"
+    ]
+  },
+  "Slack": {
+    "app_name": "Slack",
+    "category": "Unknown",
+    "website": "docs.slack.dev",
+    "api": {
+      "api_available": "unknown",
+      "api_types": [],
+      "api_breadth": "unknown",
+      "official_api_docs_url": null
+    },
+    "authentication": {
+      "auth_methods": [],
+      "developer_access": "unknown",
+      "auth_docs_url": null
+    },
+    "webhooks": {
+      "available": "unknown",
+      "docs_url": null
+    },
+    "mcp": {
+      "status": "unknown",
+      "source_url": null
+    },
+    "documentation": {
+      "quality": "unknown",
+      "official_docs": []
+    },
+    "composio": {
+      "currently_supported": "yes",
+      "toolkit_slug": "slack",
+      "toolkit_source_url": "https://composio.dev/toolkits/slack"
+    },
+    "recommendation": {
+      "buildability": "UNKNOWN",
+      "priority": "COVERED",
+      "score": 10,
+      "confidence": 0,
+      "recommendation_reason": "Could not generate analyst reason due to error: Gemini daily quota exhausted"
+    },
+    "verification": {
+      "status": "unavailable",
+      "unsupported_claims": [],
+      "issues": [
+        "Verification LLM call failed"
+      ],
+      "verifier_notes": "Could not run verification \u2013 LLM unavailable."
+    },
+    "evidence": [
+      {
+        "field": "general",
+        "claim": "Source found for Slack",
+        "source_url": "https://docs.slack.dev/apis/web-api/",
+        "source_title": "Slack Web API",
+        "source_type": "official_docs",
+        "evidence_excerpt": "## Basic overview [\u200b](https://docs.slack.dev/apis/web-api/#basics)\n### POST bodies [\u200b](https://docs.slack.dev/apis/web-api/#post-bodies)\n#### JSON-encoded bodies [\u200b](https://docs.slack.dev/apis/web-ap",
+        "checked_at": "2026-08-17 17:02:52.079779+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Slack",
+        "source_url": "https://api.slack.com/authentication/basics",
+        "source_title": "Slack API Quickstart",
+        "source_type": "official_docs",
+        "evidence_excerpt": "## Running the app [\u200b](https://docs.slack.dev/quickstart/#running-the-app)\n```sh\n$ export SLACK_APP_TOKEN=<your-app-level-token>\n```\n\n```sh\n$ export SLACK_BOT_TOKEN=xoxb-<your-bot-token>\n```\n\n## Next ",
+        "checked_at": "2026-08-17 17:02:52.079779+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Slack",
+        "source_url": "https://docs.slack.dev/apis/",
+        "source_title": "Slack APIs",
+        "source_type": "official_docs",
+        "evidence_excerpt": "Slack APIs. Every Slack app and workflow has access to a range of APIs that provide access to read, write, and update many types of data in Slack.",
+        "checked_at": "2026-08-17 17:02:52.079779+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Slack",
+        "source_url": "https://docs.slack.dev/authentication/installing-with-oauth",
+        "source_title": "Installing with OAuth",
+        "source_type": "official_docs",
+        "evidence_excerpt": "## Obtaining access tokens with OAuth [\u200b](https://docs.slack.dev/authentication/installing-with-oauth/#obtaining)\n### Exchanging a temporary authorization code for an access token [\u200b](https://docs.sla",
+        "checked_at": "2026-08-17 17:02:52.079779+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Slack",
+        "source_url": "https://api.slack.com/apps/",
+        "source_title": "Slack API: Applications",
+        "source_type": "official_docs",
+        "evidence_excerpt": "You'll need to sign in to your Slack account to create an application. Don't see an app you're looking for? Sign in to another workspace.",
+        "checked_at": "2026-08-17 17:02:52.079779+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Slack",
+        "source_url": "https://community.n8n.io/t/slack-oauth2-api-credentials-for-slack-app/45461?tl=en",
+        "source_title": "Slack Oauth2 API Credentials for Slack App - Questions",
+        "source_type": "community",
+        "evidence_excerpt": "",
+        "checked_at": "2026-08-17 17:02:52.079779+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Slack",
+        "source_url": "https://slack.com/help/articles/48855576908307-Guide-to-Model-Context-Protocol-in-Slack",
+        "source_title": "Guide to Model Context Protocol in Slack",
+        "source_type": "search_result",
+        "evidence_excerpt": "# Guide to Model Context Protocol in Slack\nYou can use the Slack MCP server to connect AI tools to Slack, or set [Slackbot](https://slack.com/help/articles/202026038-How-to-work-with-Slackbot) up as a",
+        "checked_at": "2026-08-17 17:02:52.079779+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Slack",
+        "source_url": "https://docs.slack.dev/ai/slack-mcp-server",
+        "source_title": "Slack MCP server overview",
+        "source_type": "official_docs",
+        "evidence_excerpt": "With the Slack MCP server, your integrated apps can search channels, send messages, and perform other Slack actions through MCP clients.",
+        "checked_at": "2026-08-17 17:02:52.079779+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Slack",
+        "source_url": "https://slack.com/blog/news/mcp-real-time-search-api-now-available",
+        "source_title": "Slack Securely Powers Your Third-Party Agents With ...",
+        "source_type": "search_result",
+        "evidence_excerpt": "Today, we\u2019re thrilled to announce the general availability of Slack\u2019s Real-Time Search (RTS) API and Model Context Protocol (MCP) server.",
+        "checked_at": "2026-08-17 17:02:52.079779+00:00"
+      }
+    ],
+    "errors": [
+      "API_RESEARCHER: Gemini daily quota exhausted",
+      "AUTH_RESEARCHER: Gemini daily quota exhausted",
+      "MCP_RESEARCHER: Gemini daily quota exhausted",
+      "VERIFIER: Gemini daily quota exhausted"
+    ]
+  },
+  "Stripe": {
+    "app_name": "Stripe",
+    "category": "Unknown",
+    "website": "docs.stripe.com",
+    "api": {
+      "api_available": "unknown",
+      "api_types": [],
+      "api_breadth": "unknown",
+      "official_api_docs_url": null
+    },
+    "authentication": {
+      "auth_methods": [],
+      "developer_access": "unknown",
+      "auth_docs_url": null
+    },
+    "webhooks": {
+      "available": "unknown",
+      "docs_url": null
+    },
+    "mcp": {
+      "status": "unknown",
+      "source_url": null
+    },
+    "documentation": {
+      "quality": "unknown",
+      "official_docs": []
+    },
+    "composio": {
+      "currently_supported": "no",
+      "toolkit_slug": null,
+      "toolkit_source_url": null
+    },
+    "recommendation": {
+      "buildability": "UNKNOWN",
+      "priority": "NEEDS_REVIEW",
+      "score": 10,
+      "confidence": 0,
+      "recommendation_reason": "Could not generate analyst reason due to error: Gemini daily quota exhausted"
+    },
+    "verification": {
+      "status": "unavailable",
+      "unsupported_claims": [],
+      "issues": [
+        "Verification LLM call failed"
+      ],
+      "verifier_notes": "Could not run verification \u2013 LLM unavailable."
+    },
+    "evidence": [
+      {
+        "field": "general",
+        "claim": "Source found for Stripe",
+        "source_url": "https://docs.stripe.com/api",
+        "source_title": "Stripe API Reference",
+        "source_type": "official_docs",
+        "evidence_excerpt": "# [API Reference](https://docs.stripe.com/api)\nThe Stripe API is organized around [REST](http://en.wikipedia.org/wiki/Representational_State_Transfer).\n\n## Not a developer?\n```\nhttps://api.stripe.com\n",
+        "checked_at": "2026-08-17 17:02:59.308952+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Stripe",
+        "source_url": "https://docs.stripe.com/use-stripe-apps/adobe-commerce/payments/custom-storefront",
+        "source_title": "Build a custom storefront",
+        "source_type": "official_docs",
+        "evidence_excerpt": "# Build a customstorefront\n## Learn how to build a custom storefront that supports Stripe payment features.\nYou can use the REST API or GraphQL API to build custom storefronts, such as progressive web",
+        "checked_at": "2026-08-17 17:02:59.308952+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Stripe",
+        "source_url": "https://www.apollographql.com/graphos/apollo-connectors/stripe",
+        "source_title": "Connect Stripe Payment APIs",
+        "source_type": "search_result",
+        "evidence_excerpt": "Connect with Stripe's RESTful API to accept payments, manage revenue, and embed financial services. Easily join Stripe data with internal and external APIs ...",
+        "checked_at": "2026-08-17 17:02:59.308952+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Stripe",
+        "source_url": "https://docs.stripe.com/keys",
+        "source_title": "API keys | Stripe Documentation",
+        "source_type": "official_docs",
+        "evidence_excerpt": "Use the Developers Dashboard to create, reveal, delete, and rotate API keys. You can access your API keys on the API keys tab.",
+        "checked_at": "2026-08-17 17:02:59.308952+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Stripe",
+        "source_url": "https://docs.stripe.com/stripe-apps/api-authentication/oauth",
+        "source_title": "OAuth 2.0",
+        "source_type": "official_docs",
+        "evidence_excerpt": "You'll need to use the app developer API Key for the relevant link type used in the install step. Link, API Key. Live mode link, app developer live mode API key.",
+        "checked_at": "2026-08-17 17:02:59.308952+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Stripe",
+        "source_url": "https://docs.stripe.com/stripe-apps/api-authentication",
+        "source_title": "API authentication methods",
+        "source_type": "official_docs",
+        "evidence_excerpt": "# API authenticationmethods\n## Configure\n```\n{\n  \"id\": \"com.example.app\",\n  \"version\": \"0.0.1\",\n  \"name\": \"Your Stripe App\",\n  \"distribution_type\": \"public\",\n  \"permissions\": [],\n  \"stripe_api_access_",
+        "checked_at": "2026-08-17 17:02:59.308952+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Stripe",
+        "source_url": "https://docs.stripe.com/mcp",
+        "source_title": "Model Context Protocol (MCP) - Stripe Documentation",
+        "source_type": "official_docs",
+        "evidence_excerpt": "# Model Context Protocol(MCP) [Public preview](https://docs.stripe.com/release-phases)\n## Let your AI agents interact with the Stripe API by using our MCP server.\nAsk about this page\n\nCopy for LLM\n\nTh",
+        "checked_at": "2026-08-17 17:02:59.308952+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Stripe",
+        "source_url": "https://www.youtube.com/watch?v=rtGlC0-GuJw",
+        "source_title": "Multiple Ways to Use MCPs with Stripe - YouTube",
+        "source_type": "third_party",
+        "evidence_excerpt": "... MCP (Model Context Protocol) to supercharge your AI agents, automations, developer cycle and workflows. The Stripe MCP server exposes ...",
+        "checked_at": "2026-08-17 17:02:59.308952+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Stripe",
+        "source_url": "https://mcpservers.org/servers/stripe-mcp-server",
+        "source_title": "Official Stripe MCP Server",
+        "source_type": "search_result",
+        "evidence_excerpt": "# Stripe MCP\n## Model Context Protocol (MCP)\nStripe hosts a remote MCP server at `https://mcp.stripe.com`.\n\n## Agent skills\n### Codex\n```bash\ncodex plugin add stripe@openai-curated\n```\n\n## Manual inst",
+        "checked_at": "2026-08-17 17:02:59.308952+00:00"
+      }
+    ],
+    "errors": [
+      "API_RESEARCHER: Gemini daily quota exhausted",
+      "AUTH_RESEARCHER: Gemini daily quota exhausted",
+      "MCP_RESEARCHER: Gemini daily quota exhausted",
+      "VERIFIER: Gemini daily quota exhausted"
+    ]
+  },
+  "Notion": {
+    "app_name": "Notion",
+    "category": "Unknown",
+    "website": "developers.notion.com",
+    "api": {
+      "api_available": "unknown",
+      "api_types": [],
+      "api_breadth": "unknown",
+      "official_api_docs_url": null
+    },
+    "authentication": {
+      "auth_methods": [],
+      "developer_access": "unknown",
+      "auth_docs_url": null
+    },
+    "webhooks": {
+      "available": "unknown",
+      "docs_url": null
+    },
+    "mcp": {
+      "status": "unknown",
+      "source_url": null
+    },
+    "documentation": {
+      "quality": "unknown",
+      "official_docs": []
+    },
+    "composio": {
+      "currently_supported": "yes",
+      "toolkit_slug": "notion",
+      "toolkit_source_url": "https://composio.dev/toolkits/notion"
+    },
+    "recommendation": {
+      "buildability": "UNKNOWN",
+      "priority": "COVERED",
+      "score": 10,
+      "confidence": 0,
+      "recommendation_reason": "Could not generate analyst reason due to error: Gemini daily quota exhausted"
+    },
+    "verification": {
+      "status": "unavailable",
+      "unsupported_claims": [],
+      "issues": [
+        "Verification LLM call failed"
+      ],
+      "verifier_notes": "Could not run verification \u2013 LLM unavailable."
+    },
+    "evidence": [
+      {
+        "field": "general",
+        "claim": "Source found for Notion",
+        "source_url": "https://medium.com/@xuorig/first-look-at-notions-public-api-49baae5572e9",
+        "source_title": "First Look at Notion's Public API | by Marc-Andr\u00e9 Giroux | Medium",
+        "source_type": "third_party",
+        "evidence_excerpt": "GraphQL",
+        "checked_at": "2026-08-17 17:03:10.804176+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Notion",
+        "source_url": "https://developers.notion.com/guides/get-started/overview",
+        "source_title": "Overview - Notion Docs",
+        "source_type": "official_docs",
+        "evidence_excerpt": "## [\u200b](https://developers.notion.com/guides/get-started/overview#using-notion-api)  Using Notion API\nWith the REST API, you can read, create, and update nearly everything in a workspace \u2014 pages, datab",
+        "checked_at": "2026-08-17 17:03:10.804176+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Notion",
+        "source_url": "https://developers.notion.com/reference/intro",
+        "source_title": "Introduction - Notion Docs - Notion API",
+        "source_type": "official_docs",
+        "evidence_excerpt": "## [\u200b](https://developers.notion.com/reference/intro#pagination)  Pagination\n### [\u200b](https://developers.notion.com/reference/intro#how-to-send-a-paginated-request)  How to send a paginated request\n###",
+        "checked_at": "2026-08-17 17:03:10.804176+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Notion",
+        "source_url": "https://developers.notion.com/guides/get-started/authorization",
+        "source_title": "Authorization - Notion Docs",
+        "source_type": "official_docs",
+        "evidence_excerpt": "## [\u200b](https://developers.notion.com/guides/get-started/authorization#internal-connection-auth-flow-set-up)  Internal connection auth flow set-up\n### [\u200b](https://developers.notion.com/guides/get-start",
+        "checked_at": "2026-08-17 17:03:10.804176+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Notion",
+        "source_url": "https://developers.notion.com/workers/guides/oauth",
+        "source_title": "OAuth - Notion Docs",
+        "source_type": "official_docs",
+        "evidence_excerpt": "## [\u200b](https://developers.notion.com/workers/guides/oauth#define-an-oauth-capability)  Define an OAuth capability\n```\nimport { Worker } from \"@notionhq/workers\";\n\nconst worker = new Worker();\nexport d",
+        "checked_at": "2026-08-17 17:03:10.804176+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Notion",
+        "source_url": "https://developers.notion.com/reference/create-a-token",
+        "source_title": "Create a token - Notion Docs",
+        "source_type": "official_docs",
+        "evidence_excerpt": "## Documentation Index\n```\nimport { Client } from \"@notionhq/client\"\n\nconst notion = new Client()\n\nconst response = await notion.oauth.token({\n  client_id: process.env.OAUTH_CLIENT_ID,\n  client_secret",
+        "checked_at": "2026-08-17 17:03:10.804176+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Notion",
+        "source_url": "https://developers.notion.com/guides/mcp/overview",
+        "source_title": "Notion MCP - Notion Docs",
+        "source_type": "official_docs",
+        "evidence_excerpt": "## Documentation Index\nNotion MCP lets an [MCP client](https://developers.notion.com/guides/mcp/common-mcp-clients), such as Claude Code, Cursor, or Codex, connect to your Notion workspace through the",
+        "checked_at": "2026-08-17 17:03:10.804176+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Notion",
+        "source_url": "https://developers.notion.com/guides/mcp/get-started-with-mcp",
+        "source_title": "Connect to Notion MCP - Notion Docs",
+        "source_type": "official_docs",
+        "evidence_excerpt": "## [\u200b](https://developers.notion.com/guides/mcp/get-started-with-mcp#codex)  Codex\n```\n[mcp_servers.notion]\nurl = \"https://mcp.notion.com/mcp\"\n```\n\n## [\u200b](https://developers.notion.com/guides/mcp/get-",
+        "checked_at": "2026-08-17 17:03:10.804176+00:00"
+      },
+      {
+        "field": "general",
+        "claim": "Source found for Notion",
+        "source_url": "https://github.com/suekou/mcp-notion-server",
+        "source_title": "suekou/mcp-notion-server - GitHub",
+        "source_type": "official_github",
+        "evidence_excerpt": "# Notion MCP Server\n## Quick Start\n```\n{\n  \"mcpServers\": {\n    \"notion\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@suekou/mcp-notion-server\"],\n      \"env\": {\n        \"NOTION_API_TOKEN\": \"your-i",
+        "checked_at": "2026-08-17 17:03:10.804176+00:00"
+      }
+    ],
+    "errors": [
+      "API_RESEARCHER: Gemini daily quota exhausted",
+      "AUTH_RESEARCHER: Gemini daily quota exhausted",
+      "MCP_RESEARCHER: Gemini daily quota exhausted",
+      "VERIFIER: Gemini daily quota exhausted"
+    ]
+  }
+}
