@@ -24,6 +24,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.get("/")
+def read_root():
+    return {"status": "online", "message": "Composio Toolkit Radar API is running."}
+
 @app.post("/research/{app_name}")
 async def research_app_endpoint(app_name: str):
     """
