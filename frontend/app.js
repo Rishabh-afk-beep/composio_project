@@ -243,43 +243,88 @@ window.addEventListener('click', (e) => {
 
 async function runDemo() {
     const inputField = document.getElementById('demo-app-select');
-    const appName = inputField.value.trim();
-    if (!appName) {
-        alert("Please enter an app name.");
+    const rawInput = inputField.value.trim();
+    if (!rawInput) {
+        alert("Please enter at least one app name.");
         return;
     }
     
+    // Split by comma or newline and clean up
+    const appNames = rawInput.split(/[\n,]+/).map(a => a.trim()).filter(a => a);
+    if (appNames.length === 0) return;
+
     const spinner = document.getElementById('demo-spinner');
+    const progressText = document.getElementById('demo-progress-text');
     const resDiv = document.getElementById('demo-result');
+    const tbody = document.getElementById('demo-matrix-body');
     const btn = document.querySelector('button[onclick="runDemo()"]');
 
     spinner.classList.remove('hidden');
-    resDiv.classList.add('hidden');
+    resDiv.classList.remove('hidden');
+    tbody.innerHTML = ""; // clear previous results
+    
     if (btn) {
         btn.disabled = true;
         btn.innerHTML = "Researching...";
     }
 
-    try {
-        // For local development it remains localhost, but in production Vercel will run a build script to replace this
-        const BACKEND_URL = '__API_URL__';
-        const url = BACKEND_URL === '__API_URL__' ? 'http://localhost:8000' : BACKEND_URL;
+    const BACKEND_URL = '__API_URL__';
+    const url = BACKEND_URL === '__API_URL__' ? 'http://localhost:8000' : BACKEND_URL;
+
+    for (let i = 0; i < appNames.length; i++) {
+        const appName = appNames[i];
+        progressText.innerText = `Researching ${appName}... (${i+1}/${appNames.length})`;
         
-        const response = await fetch(`${url}/research/${encodeURIComponent(appName)}`, { method: 'POST' });
-        if (response.ok) {
-            const data = await response.json();
-            resDiv.innerHTML = `<pre style="white-space: pre-wrap; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; color: #a5b4fc;">${JSON.stringify(data, null, 2)}</pre>`;
-        } else {
-            const errorText = await response.text();
-            resDiv.innerHTML = `<p style="color: var(--red);">Error: ${errorText}</p>`;
+        // Create a temporary loading row
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+            <td style="font-weight: 500;">${appName}</td>
+            <td colspan="5" style="color: var(--text-secondary);"><i data-lucide="loader" style="animation: spin 1s linear infinite; width: 14px; height: 14px; display: inline-block; vertical-align: middle;"></i> Extracting...</td>
+        `;
+        tbody.appendChild(tr);
+        lucide.createIcons({ root: tr });
+
+        try {
+            const response = await fetch(`${url}/research/${encodeURIComponent(appName)}`, { method: 'POST' });
+            if (response.ok) {
+                const data = await response.json();
+                
+                // Format the result row
+                const apiStr = data.api.api_types.length ? data.api.api_types.join(", ") : "Unknown";
+                const authStr = data.authentication.auth_methods.length ? data.authentication.auth_methods.join(", ") : "Unknown";
+                const mcpStatus = data.mcp.status === "yes" ? `<span class="badge green">Yes</span>` : (data.mcp.status === "no" ? `<span class="badge red">No</span>` : `<span class="badge yellow">Unknown</span>`);
+                const score = data.recommendation.score;
+                const scoreClass = score >= 70 ? "green" : (score >= 40 ? "yellow" : "red");
+                const verifiedStr = data.verification.verified ? `<span style="color: var(--green);"><i data-lucide="check-circle" style="width:16px;"></i> Yes</span>` : `<span style="color: var(--red);"><i data-lucide="x-circle" style="width:16px;"></i> No</span>`;
+
+                tr.innerHTML = `
+                    <td style="font-weight: 600; color: #fff;">${data.app_name}</td>
+                    <td>${apiStr}</td>
+                    <td>${authStr}</td>
+                    <td>${mcpStatus}</td>
+                    <td><span class="badge ${scoreClass}">${score}</span></td>
+                    <td>${verifiedStr}</td>
+                `;
+            } else {
+                const errorText = await response.text();
+                tr.innerHTML = `
+                    <td style="font-weight: 500;">${appName}</td>
+                    <td colspan="5" style="color: var(--red);">Error: ${errorText}</td>
+                `;
+            }
+        } catch (e) {
+            console.error(`Live backend failed for ${appName}`, e);
+            tr.innerHTML = `
+                <td style="font-weight: 500;">${appName}</td>
+                <td colspan="5" style="color: var(--yellow);">Connection Failed</td>
+            `;
         }
-    } catch (e) {
-        console.error("Live backend failed", e);
-        resDiv.innerHTML = `<p style="color: var(--yellow);">Could not connect to the API. Make sure you run 'python server.py' to start the local backend!</p>`;
+        lucide.createIcons({ root: tr });
     }
 
-    spinner.classList.add('hidden');
-    resDiv.classList.remove('hidden');
+    progressText.innerText = "Research Complete!";
+    setTimeout(() => { spinner.classList.add('hidden'); }, 2000);
+    
     if (btn) {
         btn.disabled = false;
         btn.innerHTML = "Research Live";

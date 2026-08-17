@@ -172,17 +172,36 @@
                     <p>Type any app name below and hit research to watch the agent work in real-time via the API.</p>
                 </div>
                 
-                <div class="controls" style="justify-content: flex-start; max-width: 600px;">
-                    <div class="search-box" style="flex: 1;">
-                        <i data-lucide="zap"></i>
-                        <input type="text" id="demo-app-select" placeholder="Enter app name (e.g. Stripe, OpenAI)..." class="demo-input" style="width: 100%; border: none; outline: none; background: transparent; color: var(--text-primary); font-size: 0.95rem;">
+                <div class="controls" style="align-items: flex-start; max-width: 800px;">
+                    <div class="search-box" style="flex: 1; min-height: 100px;">
+                        <i data-lucide="zap" style="margin-top: 10px;"></i>
+                        <textarea id="demo-app-select" placeholder="Enter multiple app names separated by commas or new lines (e.g. Stripe, Slack, Salesforce)..." class="demo-input" style="width: 100%; height: 80px; border: none; outline: none; background: transparent; color: var(--text-primary); font-size: 0.95rem; resize: vertical; padding-top: 10px; font-family: inherit;"></textarea>
                     </div>
-                    <button onclick="runDemo()" class="filter-btn active" style="margin-left: 10px;">Research Live</button>
+                    <button onclick="runDemo()" class="filter-btn active" style="margin-left: 15px; margin-top: 10px;">Research Live</button>
                 </div>
-                <div id="demo-spinner" class="hidden" style="margin-top: 15px; color: var(--text-secondary);">
-                    <i data-lucide="loader" class="spin-icon" style="animation: spin 1s linear infinite;"></i> Researching... this takes 10-20 seconds.
+                
+                <div id="demo-spinner" class="hidden" style="margin-top: 20px; color: var(--text-secondary); display: flex; align-items: center; gap: 10px;">
+                    <i data-lucide="loader" class="spin-icon" style="animation: spin 1s linear infinite;"></i> <span id="demo-progress-text">Researching...</span>
                 </div>
-                <div id="demo-result" class="hidden" style="margin-top: 15px; background: var(--surface-color); padding: 20px; border-radius: var(--radius); border: 1px solid var(--border-color); overflow-x: auto;">
+                
+                <div id="demo-result" class="hidden" style="margin-top: 20px;">
+                    <div class="table-container">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>App Name</th>
+                                    <th>API Types</th>
+                                    <th>Auth</th>
+                                    <th>MCP</th>
+                                    <th>Score</th>
+                                    <th>Verification</th>
+                                </tr>
+                            </thead>
+                            <tbody id="demo-matrix-body">
+                                <!-- Populated by JS -->
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </section>
 
